@@ -11,6 +11,10 @@ _barclaysAdserver = {
                     $('#sucessfull').show();
                     _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                     $('#b_username').html(_barclaysUser['username']);
+                    if (typeof(Storage) != undefined) {
+                        console.log('data present');
+                        $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
+                    }
                 }
             }
         }
