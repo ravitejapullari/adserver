@@ -1,0 +1,93 @@
+<DOCTYPE html>
+    <html>
+
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/site.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="assets/js/login.data.js"></script>
+        <!--script type='text/javascript'>
+            var googletag = googletag || {};
+            googletag.cmd = googletag.cmd || [];
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' == document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
+        </script-->
+    </head>
+
+    <body>
+        <header class="container-fluid">
+            <div class="brand-logo">
+                <img src="assets/imgs/barclays-logo.gif " height="46" width="267" />
+            </div>
+        </header>
+        <div class="container-fluid" id="loginpage">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default main-container">
+                        <div class="panel-body">
+                            <div class="hidden-xs col-sm-8">
+                                <div class="jumbotron">
+                                    <img src="assets/imgs/helptobuy.jpg" class="img-responsive">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="panel panel-default login">
+                                    <div class="panel-body">
+                                        <form class="form-inline">
+                                            <div class="form-group">
+                                                <label for="exampleInputName2">Username</label><br>
+                                                <input type="text" class="form-control" id="username" placeholder="User Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail2">Password</label><br>
+                                                <input type="password" class="form-control" id="userpassword" placeholder="Password">
+                                            </div>
+                                            <a onclick="_barclaysAdserver._executeLogin();" class="btn btn-default pull-right">Login</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- protools_above_comments_full_banner_468x60 
+                            <div id='div-gpt-ad-1427669183026-0' style='width:468px; height:60px;'></div>
+                            <div id='div-gpt-ad-1427669183026-1' style='width:160px; height:600px;'></div>
+                            <div id='div-gpt-ad-1427669183026-2' style='width:250px; height:250px;'></div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="sucessfull" style="display: none;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="jumbotron">
+                                <h1>Hello, <span id="b_username"></span></h1>
+                                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/site.js"></script>
+        <!--script src="assets/js/barclays-ads-object.js"></script>
+        <script src="assets/js/barclays-ads.js"></script-->
+        <script src="assets/js/login.js"></script>
+    </body>
+
+    </html>
