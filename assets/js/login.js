@@ -12,15 +12,7 @@ _barclaysAdserver = {
                     _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                     $('#b_username').html(_barclaysUser['username']);
                     if (typeof(Storage) != undefined) {
-                        console.log('data present');
-                        $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
-                        var i = 0,
-                            oJson = {},
-                            sKey;
-                        for (; sKey = window.localStorage.key(i); i++) {
-                            oJson[sKey] = window.localStorage.getItem(sKey);
-                        }
-                        console.log(Object.keys(oJson));
+                        _barclaysAdserver._accessStorageData();
                     }
                 }
             }
@@ -32,5 +24,17 @@ _barclaysAdserver = {
         if (_username != '' && _password != '') {
             _barclaysAdserver._checklogin(_username, _password);
         }
+    },
+    _accessStorageData: function() {
+        console.log('data present');
+        $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
+        var i = 0,
+            oJson = {},
+            sKey;
+        for (; sKey = window.localStorage.key(i); i++) {
+            oJson[sKey] = window.localStorage.getItem(sKey);
+            $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
+        }
+        console.log(Object.keys(oJson));
     }
 }
