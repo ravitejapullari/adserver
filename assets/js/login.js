@@ -20,7 +20,7 @@ _barclaysAdserver = {
                         for (; sKey = window.localStorage.key(i); i++) {
                             oJson[sKey] = window.localStorage.getItem(sKey);
                         }
-                        console.log(oJson);
+                        console.log(Object.keys(oJson));
                     }
                 }
             }
