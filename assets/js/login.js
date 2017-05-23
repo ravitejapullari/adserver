@@ -14,6 +14,13 @@ _barclaysAdserver = {
                     if (typeof(Storage) != undefined) {
                         console.log('data present');
                         $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
+                        var i = 0,
+                            oJson = {},
+                            sKey;
+                        for (; sKey = window.localStorage.key(i); i++) {
+                            oJson[sKey] = window.localStorage.getItem(sKey);
+                        }
+                        console.log(oJson);
                     }
                 }
             }
