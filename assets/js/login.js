@@ -26,7 +26,6 @@ _barclaysAdserver = {
         }
     },
     _accessStorageData: function() {
-        console.log('data present');
         $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
         var i = 0,
             oJson = {},
@@ -35,6 +34,5 @@ _barclaysAdserver = {
             oJson[sKey] = window.localStorage.getItem(sKey);
             $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
         }
-        console.log(Object.keys(oJson));
     }
 }
