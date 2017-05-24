@@ -33,7 +33,7 @@ _barclaysAdserver = {
         for (; sKey = window.localStorage.key(i); i++) {
             oJson[sKey] = window.localStorage.getItem(sKey);
             $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
-            console.log(skey);
+            console.log(sKey);
         }
         _barclaysAdserver._sasAdService(oJson);
     },
