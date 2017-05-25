@@ -19,10 +19,10 @@ _barclaysAdserver = {
         }
     },
     _executeLogin: function() {
-        var _username = $('#username').val(),
-            _password = $('#userpassword').val();
-        if (_username != '' && _password != '') {
-            _barclaysAdserver._checklogin(_username, _password);
+        var _uname = $('#username').val(),
+            _pword = $('#userpassword').val();
+        if (_uname != '' && _pword != '') {
+            _barclaysAdserver._checklogin(_uname, _pword);
         }
     },
     _accessStorageData: function() {
@@ -35,9 +35,18 @@ _barclaysAdserver = {
             $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
             console.log(sKey);
         }
-        _barclaysAdserver._sasAdService(oJson);
+        _barclaysAdserver._kruxServiceCall(oJson);
+        _barclaysAdserver._sasAdServiceCall();
+        _barclaysAdserver._aemServiceCall();
     },
-    _sasAdService: function(kdata) {
-        console.log('end');
+    // Service calls to KRUX, SaS and AEM
+    _kruxServiceCall: function() {
+        console.log('KRUX service call');
+    },
+    _sasAdServiceCall: function(kdata) {
+        console.log('SAS service call');
+    },
+    _aemServiceCall: function() {
+        console.log('AEM service call');
     }
 }
