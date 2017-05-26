@@ -14,6 +14,6 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "kruxgender": "female",
             "random": "33"
         },
-        "adcallmethod": "hserver",
+        "adcallmethod": "iserver",
         "saswebsever": "https://demo-ads.aimatch.com/demo"
     };
