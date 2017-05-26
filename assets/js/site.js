@@ -6,7 +6,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
     //https: //demo-ads.aimatch.com/demo/hserver/site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
-        "segments": {
+        "segment": {
             "site": "barclays.com",
             "area": "barcleyshomepage",
             "kruxinterestcategory": "cars",
@@ -14,5 +14,5 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "random": "33"
         },
         "adcallmethod": "hserver",
-        "saswebsever": "//demo-ads.aimatch.com/demo/"
+        "saswebsever": "https://demo-ads.aimatch.com/demo"
     };

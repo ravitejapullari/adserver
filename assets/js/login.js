@@ -38,7 +38,7 @@
                 console.log(oJson);
             }
             _barclaysAdserver._kruxServCall(oJson);
-            _barclaysAdserver._sasAdServCall();
+            _barclaysAdserver._sasAdServCall(oJson);
             _barclaysAdserver._aemServCall();
         },
         _adAjaxServ: function() {
@@ -56,7 +56,17 @@
             _barclaysAdserver._adAjaxServ();
             console.log('KRUX service call');
         },
-        _sasAdServCall: function() {
+        _sasAdServCall: function(sData) {
+            var _kruxSegments = sData['segments'];
+            var _segKeys = Object.keys(_kruxSegments['segment']);
+            var _sasSegPar = '';
+            for (var i = 0, j = _segKeys.length; i < j; i++) {
+                _sasSegPar += _segKeys[0] + '=' + _kruxSegments['segment']._segKeys[0] + '/';
+            }
+            console.log(_sasSegPar);
+            var _srcimage = _kruxSegments.saswebsever + '/' +
+                _kruxSegments.adcallmethod + '/' +
+                _kruxSegments['segment'].adcallmethod + '/' + ;
             _barclaysAdserver._adAjaxServ();
             console.log('SAS service call');
         },
