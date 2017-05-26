@@ -58,10 +58,11 @@
         },
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData['segments'];
+            var _segmentObj = _kruxSegments['segment'];
             var _segKeys = Object.keys(_kruxSegments['segment']);
             var _sasSegPar = '';
             for (var i = 0, j = _segKeys.length; i < j; i++) {
-                _sasSegPar += _segKeys[0] + '=' + _kruxSegments['segment']._segKeys[0] + '/';
+                _sasSegPar += _segKeys[0] + '=' + _segmentObj[_segKeys[0]] + '/';
             }
             console.log(_sasSegPar);
             var _srcimage = _kruxSegments.saswebsever + '/' +
