@@ -1,18 +1,18 @@
 'use strict';
 
 var _barclaysAdserver = _barclaysAdserver || {},
-    _barclaysUser = {};
+    _barclaysUser = {},
 
-//https: //demo-ads.aimatch.com/demo/hserver/site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
+    //https: //demo-ads.aimatch.com/demo/hserver/site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
-_sasObj = {
-    "segments": {
-        "site": "barclays.com",
-        "area": "barcleyshomepage",
-        "kruxinterestcategory": "cars",
-        "kruxgender": "female",
-        "random": "33"
-    },
-    "adcallmethod": "hserver",
-    "saswebsever": "//demo-ads.aimatch.com/demo/"
-};
+    _sasObj = {
+        "segments": {
+            "site": "barclays.com",
+            "area": "barcleyshomepage",
+            "kruxinterestcategory": "cars",
+            "kruxgender": "female",
+            "random": "33"
+        },
+        "adcallmethod": "hserver",
+        "saswebsever": "//demo-ads.aimatch.com/demo/"
+    };
