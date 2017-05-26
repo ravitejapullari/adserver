@@ -60,10 +60,11 @@
             var _kruxSegments = sData['segments'];
             var _segmentObj = _kruxSegments['segment'];
             var _segKeys = Object.keys(_kruxSegments['segment']);
-            var _sasSegPar;
+            var _sasSegPar = [];
             for (var i = 0, j = _segKeys.length; i < j; i++) {
-                _sasSegPar += _segKeys[i] + '=' + _segmentObj[_segKeys[i]] + '/';
+                _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
             }
+            _sasSegPar = _sasSegPar.join('/')
             console.log(_sasSegPar);
             var _srcimage = _kruxSegments.saswebsever + '/' +
                 _kruxSegments['segment'].adcallmethod + '/' + _sasSegPar;
