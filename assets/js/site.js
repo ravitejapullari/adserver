@@ -3,7 +3,8 @@
 var _barclaysAdserver = _barclaysAdserver || {},
     _barclaysUser = {},
 
-    //https: //demo-ads.aimatch.com/demo/hserver/site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
+    //https: //demo-ads.aimatch.com/demo/hserver/
+    //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
         "segment": {

@@ -66,7 +66,7 @@
             console.log(_sasSegPar);
             var _srcimage = _kruxSegments.saswebsever + '/' +
                 _kruxSegments.adcallmethod + '/' +
-                _kruxSegments['segment'].adcallmethod + '/' + ;
+                _kruxSegments['segment'].adcallmethod + '/' + _sasSegPar;
             _barclaysAdserver._adAjaxServ();
             console.log('SAS service call');
         },
