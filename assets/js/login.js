@@ -70,7 +70,7 @@
                 _kruxSegments['segment'].adcallmethod + '/' + _sasSegPar;
             _barclaysAdserver._adAjaxServ();
             console.log(_srcimage);
-            $('#barclayscarloan').attr('src') = _srcimage;
+            $('#barclayscarloan').attr('src', _srcimage);
         },
         _aemServCall: function() {
             _barclaysAdserver._adAjaxServ();
