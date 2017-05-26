@@ -34,20 +34,34 @@
             for (; sKey = window.localStorage.key(i); i++) {
                 oJson[sKey] = window.localStorage.getItem(sKey);
                 $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
-                console.log(sKey);
+                oJson['segments'] = _sasObj;
+                console.log(oJson);
             }
-            _barclaysAdserver._kruxServiceCall(oJson);
-            _barclaysAdserver._sasAdServiceCall();
-            _barclaysAdserver._aemServiceCall();
+            _barclaysAdserver._kruxServCall(oJson);
+            _barclaysAdserver._sasAdServCall();
+            _barclaysAdserver._aemServCall();
+        },
+        _adAjaxServ: function() {
+            $.ajax({
+                method: "GET",
+                url: "",
+                data: {},
+                dataType: "json"
+            }).done(function(msg) {
+
+            });
         },
         // Service calls to KRUX, SaS and AEM
-        _kruxServiceCall: function() {
+        _kruxServCall: function(kData) {
+            _barclaysAdserver._adAjaxServ();
             console.log('KRUX service call');
         },
-        _sasAdServiceCall: function(kdata) {
+        _sasAdServCall: function() {
+            _barclaysAdserver._adAjaxServ();
             console.log('SAS service call');
         },
-        _aemServiceCall: function() {
+        _aemServCall: function() {
+            _barclaysAdserver._adAjaxServ();
             console.log('AEM service call');
         }
     }
