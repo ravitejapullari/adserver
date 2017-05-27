@@ -34,9 +34,9 @@
             for (; sKey = window.localStorage.key(i); i++) {
                 oJson[sKey] = window.localStorage.getItem(sKey);
                 $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
-                console.log(oJson);
             }
             oJson['segments'] = _sasObj;
+            console.log(oJson);
             //_barclaysAdserver._kruxServCall(oJson);
             _barclaysAdserver._sasAdServCall(oJson);
             //_barclaysAdserver._aemServCall();
