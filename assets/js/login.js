@@ -33,7 +33,7 @@
                 sKey;
             for (; sKey = window.localStorage.key(i); i++) {
                 oJson[sKey] = window.localStorage.getItem(sKey);
-                $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
+                //$('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
             }
             oJson['segments'] = _sasObj;
             console.log(oJson);
@@ -54,21 +54,19 @@
         // Service calls to KRUX, SaS and AEM
         _kruxServCall: function(kData) {
             _barclaysAdserver._adAjaxServ();
-            console.log('KRUX service call');
         },
         _sasAdServCall: function(sData) {
-            var _kruxSegments = sData['segments'];
-            var _segmentObj = _kruxSegments['segment'];
-            var _segKeys = Object.keys(_kruxSegments['segment']);
-            var _sasSegPar = [];
+            var _kruxSegments = sData['segments'],
+                _segmentObj = _kruxSegments['segment'],
+                _segKeys = Object.keys(_kruxSegments['segment']),
+                _sasSegPar = [];
+
             for (var i = 0, j = _segKeys.length; i < j; i++) {
                 _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
             }
-            _sasSegPar = _sasSegPar.join('/')
-            console.log(_sasSegPar);
+            _sasSegPar = _sasSegPar.join('/');
             var _srcimage = _kruxSegments.saswebsever + '/' +
                 _kruxSegments['adcallmethod'] + '/' + _sasSegPar;
-            console.log(_srcimage);
             $('#barclayscarloan').attr('src', _srcimage);
         },
         _aemServCall: function() {
