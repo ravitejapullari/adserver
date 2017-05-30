@@ -59,6 +59,12 @@ body {
     text-transform: capitalize;
 }
 
+.navbar.navbar-default {
+    border: 0;
+    background: none;
+    box-shadow: none;
+}
+
 .navbar.navbar-default .container-fluid {
     padding: 0;
 }
