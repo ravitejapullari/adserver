@@ -11,7 +11,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "site": "barclays.com",
             "area": "barcleyshomepage",
             "kruxinterestcategory": "cars",
-            "kruxgender": "female",
+            "kruxgender": "male",
             "random": "33"
         },
         "adcallmethod": "iserver",
