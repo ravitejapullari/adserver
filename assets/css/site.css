@@ -58,3 +58,11 @@ body {
 #b_username {
     text-transform: capitalize;
 }
+
+.navbar.navbar-default .container-fluid {
+    padding: 0;
+}
+
+.navbar.navbar-default .container-fluid .navbar-collapse {
+    padding: 0;
+}
