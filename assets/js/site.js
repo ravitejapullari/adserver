@@ -9,7 +9,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
     _sasObj = {
         "segment": {
             "FLIGHTID": 1494,
-            "FCID": [406, 1518]
+            "FCID": [1519, 1518]
         },
         "adcallmethod": "jserver",
         "saswebsever": "https://crtlt2.aimatch.com/demo"
