@@ -138,10 +138,6 @@
                                     adserver = "https://crtlt2.aimatch.com/demo";
                                     target = "/FLIGHTID=1494";
 
-                                    // Cache-busting and viewid values 
-                                    random = Math.round(Math.random() * 100000000);
-                                    if (!pageNum) var pageNum = Math.round(Math.random() * 100000000);
-
                                     document.write('<scr');
                                     document.write('ipt src="' + adserver + '/jserver' + target + '">');
                                     document.write('</scr');
