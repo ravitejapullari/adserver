@@ -133,6 +133,20 @@
                                 <script type="text/javascript">
                                     document.writeln(b1);
                                 </script>
+                                <script type="text/javascript" language="JavaScript">
+                                    // Modify to reflect site specifics 
+                                    adserver = "http://{path to your adserver}";
+                                    target = "/1494";
+
+                                    // Cache-busting and viewid values 
+                                    random = Math.round(Math.random() * 100000000);
+                                    if (!pageNum) var pageNum = Math.round(Math.random() * 100000000);
+
+                                    document.write('<scr');
+                                    document.write('ipt src="' + adserver + '/jserver' + target + '>');
+                                    document.write('</scr');
+                                    document.write('ipt>');
+                                </script>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 col-md-4">
