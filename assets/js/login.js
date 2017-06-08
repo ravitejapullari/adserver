@@ -70,7 +70,7 @@
             //$('#barclayscarloan').attr('src', _srcimage); //_srcimage);
 
             var _script = document.createElement("script");
-            _script.type = 'script';
+            _script.type = 'text/javascript';
             _script.src = _srcimage;
             $('#barclayscarloan').append(_script);
 
