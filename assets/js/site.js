@@ -19,7 +19,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
 var aimRnd = Math.round(Math.random() * 100000000);
 
 // adserver URL 
-var adserver = _sasObj.saswebsever + '/bserver/';
+var adserver = _sasObj.saswebsever + '/bserver';
 
 // Ad tag targeting values which will be appended to each ad request section in the bserver ad call 
 //var allAdTags = "/ball/random=" + aimRnd + "/viewid=" + aimRnd;
