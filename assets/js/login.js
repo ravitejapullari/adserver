@@ -73,7 +73,7 @@
             _script.type = 'text/javascript';
             _script.src = _srcimage;
             //_script.onload = call
-            $('#barclayscarloan').appendChild(_script);
+            $('#barclayscarloan').append(_script);
 
 
 
