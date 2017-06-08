@@ -7,7 +7,9 @@ var _barclaysAdserver = _barclaysAdserver || {},
     //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
-        "FLIGHTID": 1494,
+        "segment": {
+            "FLIGHTID": 1494
+        },
         "adcallmethod": "jserver",
         "saswebsever": "https://crtlt2.aimatch.com/demo"
     };
