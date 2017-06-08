@@ -40,6 +40,6 @@ $(document).ready(function() {
         var _getId = $(this).attr('id');
         $('.adserver-images').hide();
         $('.' + _getId).show();
-        $('.' + _getId).addClass('.img-responsive');
+        $('.' + _getId + ' img').addClass('.img-responsive');
     });
 })
