@@ -34,3 +34,11 @@ var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID,
 document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript">');
 document.write('</scr' + 'ipt>');
 // End Hide -->
+
+$(document).ready(function() {
+    $('.adserver').on('click', function() {
+        var _getId = $(this).attr('id');
+        $('.adserver').hide();
+        $('.adserver-images,.' + _getId).show();
+    });
+})
