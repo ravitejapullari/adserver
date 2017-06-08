@@ -67,7 +67,7 @@
             _sasSegPar = _sasSegPar.join('/');
             var _srcimage = _kruxSegments.saswebsever + '/' +
                 _kruxSegments['adcallmethod'] + '/' + _sasSegPar;
-            $('#barclayscarloan').HTML('<script src=' + _srcimage + '></script>'); //_srcimage);
+            $('#barclayscarloan').append('<script src=' + _srcimage + '></script>'); //_srcimage);
         },
         _aemServCall: function() {
             _barclaysAdserver._adAjaxServ();
