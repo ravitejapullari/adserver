@@ -67,7 +67,7 @@
             _sasSegPar = _sasSegPar.join('/');
             var _srcimage = _kruxSegments.saswebsever + '/' +
                 _kruxSegments['adcallmethod'] + '/' + _sasSegPar;
-            $('#barclayscarloan').attr('src', 'https://crtlt2.aimatch.com/demo/hserver/SASPB/FCID=1516'); //_srcimage);
+            $('#barclayscarloan').innerHTML('<script src=' + _srcimage + '></script>'); //_srcimage);
         },
         _aemServCall: function() {
             _barclaysAdserver._adAjaxServ();
