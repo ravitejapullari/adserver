@@ -72,7 +72,7 @@
             var _script = document.createElement("script");
             _script.type = 'text/javascript';
             _script.src = _srcimage;
-            $('#barclayscarloan').append(_script);
+            $('#barclayscarloan').insertBefore(_script);
 
 
 
