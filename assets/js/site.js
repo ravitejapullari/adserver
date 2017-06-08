@@ -38,7 +38,7 @@ document.write('</scr' + 'ipt>');
 $(document).ready(function() {
     $('.adserver').on('click', function() {
         var _getId = $(this).attr('id');
-        $('.adserver').hide();
-        $('.adserver-images,.' + _getId).show();
+        $('.adserver-images').hide();
+        $('.' + _getId).show();
     });
 })
