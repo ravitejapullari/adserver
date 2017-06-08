@@ -8,7 +8,8 @@ var _barclaysAdserver = _barclaysAdserver || {},
 
     _sasObj = {
         "segment": {
-            "FLIGHTID": 1494
+            "FLIGHTID": 1494,
+            "FCID": 406
         },
         "adcallmethod": "jserver",
         "saswebsever": "https://crtlt2.aimatch.com/demo"
@@ -25,8 +26,8 @@ var adserver = _sasObj.saswebsever + '/bserver';
 //var allAdTags = "/ball/random=" + aimRnd + "/viewid=" + aimRnd;
 
 // Individual tags for each ad request - increment the adx variable name and the ‘/bx/’ parameter. 
-var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID;
-var ad2 = "/b2/FLIGHTID=" + _sasObj.segment.FLIGHTID;
+var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID,
+    ad2 = "/b2/FCID=" + _sasObj.segment.FCID;
 
 // bserver ad call – insert the adx variables 
 document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + '?" type="text/JavaScript" language="JavaScript">');
