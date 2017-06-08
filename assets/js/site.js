@@ -26,8 +26,9 @@ var adserver = _sasObj.saswebsever + '/bserver';
 
 // Individual tags for each ad request - increment the adx variable name and the ‘/bx/’ parameter. 
 var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID;
+var ad2 = "/b2/FLIGHTID=" + _sasObj.segment.FLIGHTID;
 
 // bserver ad call – insert the adx variables 
-document.write('<scr' + 'ipt src="' + adserver + ad1 + '?" type="text/JavaScript" language="JavaScript">');
+document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + '?" type="text/JavaScript" language="JavaScript">');
 document.write('</scr' + 'ipt>');
 // End Hide -->
