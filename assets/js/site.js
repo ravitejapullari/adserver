@@ -32,19 +32,19 @@ var _barclaysAdserver = _barclaysAdserver || {},
                 "link": "/olb/features/FeatureStoreOverview.action?dl_parameters=FsPageRef=FsMomentDetail||TravellingAboard"
             }
         }
-    }
-
-//https: //demo-ads.aimatch.com/demo/hserver/
-//site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
-
-_sasObj = {
-    "segment": {
-        "FLIGHTID": 1494,
-        "FCID": [1519, 1518]
     },
-    "adcallmethod": "jserver",
-    "saswebsever": "https://crtlt2.aimatch.com/demo"
-};
+
+    //https: //demo-ads.aimatch.com/demo/hserver/
+    //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
+
+    _sasObj = {
+        "segment": {
+            "FLIGHTID": 1494,
+            "FCID": [1519, 1518]
+        },
+        "adcallmethod": "jserver",
+        "saswebsever": "https://crtlt2.aimatch.com/demo"
+    };
 
 
 // Cache-busting and viewid value 
