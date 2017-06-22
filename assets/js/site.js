@@ -2,18 +2,49 @@
 
 var _barclaysAdserver = _barclaysAdserver || {},
     _barclaysUser = {},
+    accounts = {
+        "fsmoments": {
+            "home": {
+                "accounts": {
+                    "account1": "_1_LS_MomentsHome_",
+                    "account2": "_2_LS_MomentsHome_",
+                    "account3": "_3_LS_MomentsHome_"
+                },
+                "promptid": "804mortgageprospect-zoopla",
+                "link": "/olb/features/FeatureStoreOverview.action?dl_parameters=FsPageRef=FsMomentDetail||BuyingAHome"
+            },
+            "car": {
+                "accounts": {
+                    "account1": "_1_LS_MomentsCar_",
+                    "account2": "_2_LS_MomentsCar_",
+                    "account3": "_3_LS_MomentsCar_"
+                },
+                "promptid": "1200moments-car",
+                "link": "/olb/features/FeatureStoreOverview.action?dl_parameters=FsPageRef=FsMomentDetail||BuyingACar"
+            },
+            "travel": {
+                "accounts": {
+                    "account1": "_1_LS_MomentsTravel_",
+                    "account2": "_2_LS_MomentsTravel_",
+                    "account3": "_3_LS_MomentsTravel_"
+                },
+                "promptid": "1242travelpack-recenttravelpurchase",
+                "link": "/olb/features/FeatureStoreOverview.action?dl_parameters=FsPageRef=FsMomentDetail||TravellingAboard"
+            }
+        }
+    }
 
-    //https: //demo-ads.aimatch.com/demo/hserver/
-    //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
+//https: //demo-ads.aimatch.com/demo/hserver/
+//site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
-    _sasObj = {
-        "segment": {
-            "FLIGHTID": 1494,
-            "FCID": [1519, 1518]
-        },
-        "adcallmethod": "jserver",
-        "saswebsever": "https://crtlt2.aimatch.com/demo"
-    };
+_sasObj = {
+    "segment": {
+        "FLIGHTID": 1494,
+        "FCID": [1519, 1518]
+    },
+    "adcallmethod": "jserver",
+    "saswebsever": "https://crtlt2.aimatch.com/demo"
+};
 
 
 // Cache-busting and viewid value 
