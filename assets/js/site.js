@@ -30,7 +30,7 @@ var adserver = _sasObj.saswebsever + '/bserver';
 var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID,
     ad2 = "/b2/FCID=" + _sasObj.segment.FCID[0],
     ad3 = "/b3/FCID=" + _sasObj.segment.FCID[1];
-
+console.log(ad1, ad2, ad3);
 // bserver ad call – insert the adx variables 
 document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>');
 //document.write('</scr' + 'ipt>');
