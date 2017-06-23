@@ -32,8 +32,8 @@ var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID,
     ad3 = "/b3/FCID=" + _sasObj.segment.FCID[1];
 console.log(ad1, ad2, ad3);
 // bserver ad call – insert the adx variables 
-document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>');
-//document.write('</scr' + 'ipt>');
+document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript">');
+document.write('</scr' + 'ipt>');
 // End Hide -->
 
 $(document).ready(function() {
