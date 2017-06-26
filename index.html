@@ -62,6 +62,8 @@
             var _adserver = "http://bclays-ads.aimatch.com/bclays/";
             ad1 = "/b1/Segments=fsmoments1,fsmomentshome";
             ad2 = "/b2/Segments=fsmoments2,fsmomentscar";
+            var aimRnd = Math.round(Math.random() * 100000000);
+            var allAdTags = "/ball/random=" + aimRnd + "/viewid=" + aimRnd;
 
             // bserver ad call – insert the adx variables 
             document.write('<scr' + 'ipt src="' + adserver + allAdTags + ad1 + ad2 + '?" type="text/JavaScript" language="JavaScript">');
