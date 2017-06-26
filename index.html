@@ -58,6 +58,16 @@
                 renderMode: 0
             })
         </script>
+        <script>
+            var _adserver = "http://bclays-ads.aimatch.com/bclays/";
+            ad1 = "/b1/Segments=fsmoments1,fsmomentshome";
+            ad2 = "/b2/Segments=fsmoments2,fsmomentscar";
+
+            // bserver ad call – insert the adx variables 
+            document.write('<scr' + 'ipt src="' + adserver + allAdTags + ad1 + ad2 + '?" type="text/JavaScript" language="JavaScript">');
+            document.write('</scr' + 'ipt>');
+        </script>
+
     </head>
 
     <body>
@@ -174,7 +184,10 @@
                                         <div class="caption">
                                             <h3>First Time Buyers</h3>
                                             <p>
-                                                <script src="http://bclays-ads.aimatch.com/bclays/jserver/CAMPID=17/Segments=fsmoments1,fsmomentshome"></script>
+                                                <script>
+                                                    document.writeln(b1);
+                                                </script>
+                                                <!-- script src="http://bclays-ads.aimatch.com/bclays/jserver/CAMPID=17/Segments=fsmoments1,fsmomentshome"></script-->
                                                 <!--script src="https://bclays-ads.aimatch.com/bclays/jserver/Segments=fsmoments1,fsmomentshome"></script-->
                                             </p>
                                             <p>First time home buyer centre</p>
@@ -188,7 +201,10 @@
                                         <div class="caption">
                                             <h3>Personal loans</h3>
                                             <p>
-                                                <script src="http://bclays-ads.aimatch.com/bclays/jserver/CAMPID=17/viewid=fsmoments2,fsmomentscar"></script>
+                                                <script>
+                                                    document.writeln(b2);
+                                                </script>
+                                                <!-- script src="http://bclays-ads.aimatch.com/bclays/jserver/CAMPID=17/viewid=fsmoments2,fsmomentscar"></script-->
                                                 <!--script src="https://bclays-ads.aimatch.com/bclays/jserver/Segments=fsmoments2,fsmomentscar"></script-->
                                             </p>
                                             <p>Want to know your loan rate?</p>
