@@ -60,13 +60,13 @@
         </script>
         <script>
             var _adserver = "http://bclays-ads.aimatch.com/bclays/";
-            ad1 = "/b1/Segments=fsmoments1,fsmomentshome";
-            ad2 = "/b2/Segments=fsmoments2,fsmomentscar";
+            var _ad1 = "/b1/Segments=fsmoments1,fsmomentshome";
+            var _ad2 = "/b2/Segments=fsmoments2,fsmomentscar";
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
 
             // bserver ad call – insert the adx variables 
-            document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + ad1 + ad2 + '?" type="text/JavaScript" language="JavaScript">');
+            document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _ad1 + _ad2 + '?" type="text/JavaScript" language="JavaScript">');
             document.write('</scr' + 'ipt>');
         </script>
 
