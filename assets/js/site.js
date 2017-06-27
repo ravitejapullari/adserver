@@ -3,8 +3,9 @@
 var _barclaysAdserver = _barclaysAdserver || {},
     _barclaysUser = {},
     _accounts = {
-        "scenario1": ["fsmoments1", "fsmomentshome"],
-        "scenario2": ["bluerewards1", "bluerewards"]
+        "raviteja": ["fsmoments1", "fsmomentshome"],
+        "kishore": ["fsmoments1", "fsmomentstravel", "bluerewards1", "bluerewards"],
+        "rohit": ["fsmoments2", "fsmomentcar"]
     },
 
     //https: //demo-ads.aimatch.com/demo/hserver/
