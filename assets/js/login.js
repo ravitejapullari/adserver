@@ -60,7 +60,7 @@
                 _segmentObj = _kruxSegments['segment'],
                 _segKeys = Object.keys(_kruxSegments['segment']),
                 _sasSegPar = [];
-            console.log(_segKeys);
+            console.log(_segmentObj);
 
             /*for (var i = 0, j = _segKeys.length; i < j; i++) {
                 _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
