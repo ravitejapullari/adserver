@@ -62,6 +62,7 @@
             var _adserver = "https://bclays-ads.aimatch.com/bclays/bserver";
             var _ad1 = "/b1/Segments=fsmoments1,fsmomentshome,fspack2,fspackhome/Location_AccountType=AccountPromo_Current";
             var _ad2 = "/b2/Segments=fsmoments2,fsmomentscar/Location_AccountType=AccountPromo_Current";
+            var _ad3 = "/b3/Segments=mortgage1,mortageneeds/Location_AccountType=AccountPromo_Current"
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
 
@@ -220,6 +221,11 @@
                                     <div class="thumbnail">
                                         <div class="caption">
                                             <h3>Mortgage calculators</h3>
+                                            <p>
+                                                <script>
+                                                    document.writeln(b3);
+                                                </script>
+                                            </p>
                                             <p>Work out your mortgage budget</p>
                                             <p>Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
                                             <p><a href="https://www.barclays.co.uk/mortgages/mortgage-calculator#/cost/step1" target="_blank" class="btn btn-primary adserver" id="home" role="button">Go</a></p>
