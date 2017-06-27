@@ -60,8 +60,9 @@
                 _segmentObj = _kruxSegments['kxbarclays_segs'],
                 _segKeys = Object.keys(_kruxSegments['segment']),
                 _sasSegPar = [];
-            _sasSegPar.push(_accounts['raviteja']);
-            _sasSegPar.push(_kruxSegments['kxbarclays_segs']);
+            for (var i = 0, j = _accounts['raviteja'].length; i < j; i++) {
+                _sasSegPar.push(_accounts['raviteja'][i]);
+            }
             console.log(_sasSegPar);
 
             /*for (var i = 0, j = _segKeys.length; i < j; i++) {
