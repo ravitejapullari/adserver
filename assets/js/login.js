@@ -60,8 +60,9 @@
                 _segmentObj = _kruxSegments['segment'],
                 _segKeys = Object.keys(_kruxSegments['segment']),
                 _sasSegPar = [];
+            console.log(_segKeys);
 
-            for (var i = 0, j = _segKeys.length; i < j; i++) {
+            /*for (var i = 0, j = _segKeys.length; i < j; i++) {
                 _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
             }
             _sasSegPar = _sasSegPar.join('/');
@@ -73,7 +74,9 @@
             _script.type = 'text/javascript';
             _script.src = _srcimage;
             //_script.onload = call
-            //$('#barclayscarloan').append(_script);
+            //$('#barclayscarloan').append(_script);*/
+
+
 
 
 
