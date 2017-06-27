@@ -57,7 +57,7 @@
         },
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData['segments'],
-                _segmentObj = _kruxSegments['segment'],
+                _segmentObj = _kruxSegments['kxbarclays_segs'],
                 _segKeys = Object.keys(_kruxSegments['segment']),
                 _sasSegPar = [];
             console.log(_segmentObj);
