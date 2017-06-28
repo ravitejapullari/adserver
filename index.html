@@ -90,6 +90,7 @@
             document.write('</scr' + 'ipt>');
             var _ajaxCall = $.ajax({
                 method: "GET",
+                crossDomain: true,
                 url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
                 dataType: 'json'
             }).done(function(response) {
