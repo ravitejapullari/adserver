@@ -90,7 +90,8 @@
             document.write('</scr' + 'ipt>');
             var _ajaxCall = $.ajax({
                 method: "GET",
-                url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC'
+                url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
+                dataType: 'json'
             }).done(function(response) {
                 console.log(response);
             });
