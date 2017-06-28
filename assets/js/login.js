@@ -58,29 +58,17 @@
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '';
+            _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                 _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype + '/';
             }
+            _segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
             console.log(_segmentpair);
-
-            /*for (var i = 0, j = _segKeys.length; i < j; i++) {
-                _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
-            }
-            _sasSegPar = _sasSegPar.join('/');
-            var _srcimage = _kruxSegments.saswebsever + '/' +
-                _kruxSegments['adcallmethod'] + '/' + _sasSegPar;
-            //$('#barclayscarloan').attr('src', _srcimage); //_srcimage);
-
-            var _script = document.createElement("script");
-            _script.type = 'text/javascript';
-            _script.src = _srcimage;
-            //_script.onload = call
-            //$('#barclayscarloan').append(_script);*/
-
-
-
-
-
+            var _aimRnd = Math.round(Math.random() * 100000000);
+            var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
+            // bserver ad call – insert the adx variables 
+            document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript">'); //</scr' + 'ipt>');
+            document.write('</scr' + 'ipt>');
         },
         _aemServCall: function() {
             _barclaysAdserver._adAjaxServ();
