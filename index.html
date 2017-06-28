@@ -88,14 +88,20 @@
             // bserver ad call – insert the adx variables 
             document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript">'); //</scr' + 'ipt>');
             document.write('</scr' + 'ipt>');
+            var _ajaxCall = $.ajax({
+                method: "GET",
+                url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
+                dataType: "script"
+            }).done(function(response) {
+                console.log(response);
+            });
+            //_ajaxCall.done()
+
             var _timer = setTimeout(function() {
                 for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                     _adBanner['ad' + i] = b1;
                 }
                 console.log(_adBanner);
-                console.log(b1);
-                console.log(b2);
-                console.log(b3);
             }, 500);
         </script>
 

@@ -61,9 +61,9 @@
                 head = document.getElementsByTagName('head')[0],
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
-                _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype + '/';
+                _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
             }
-            _segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
+            //_segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
             console.log(_segmentpair);
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
