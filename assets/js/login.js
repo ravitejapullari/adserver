@@ -58,7 +58,7 @@
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '',
-                head = document.getElementsByTagName('head')[0],
+                head = document.getElementsByTagName('head')[1],
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                 _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype + '/';
