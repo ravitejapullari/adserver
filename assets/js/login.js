@@ -56,14 +56,9 @@
             _barclaysAdserver._adAjaxServ();
         },
         _sasAdServCall: function(sData) {
-            var _kruxSegments = sData.userdata['segments'],
-                _segmentObj = _kruxSegments['kxbarclays_segs'],
-                _segKeys = Object.keys(_kruxSegments['segment']),
-                _sasSegPar = [];
-            for (var i = 0, j = _accounts['raviteja'].length; i < j; i++) {
-                _sasSegPar.push(_accounts['raviteja'][i]);
-            }
-            console.log(_sasSegPar);
+            var _kruxSegments = sData.userdata['segments'];
+
+            console.log(_kruxSegments);
 
             /*for (var i = 0, j = _segKeys.length; i < j; i++) {
                 _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
