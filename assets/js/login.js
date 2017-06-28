@@ -56,7 +56,8 @@
             _barclaysAdserver._adAjaxServ();
         },
         _sasAdServCall: function(sData) {
-            $('#adserve').html(b1);
+            $('#adserve1').html(b1);
+            $('#adserve2').html(b2);
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '',
                 head = document.getElementsByTagName('head')[0],
