@@ -75,8 +75,9 @@
                 console.log('b' + (i + 1));
                 _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype + '/';
             }
-            console.log(_segmentpair);
+
             _segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
+            console.log(_segmentpair);
             /* var _adserver = "https://bclays-ads.aimatch.com/bclays/bserver";
             var _ad1 = "/b1/Segments=fsmoments1,fsmomentshome/Location_AccountType=accountPromo_current";
             var _ad2 = "/b2/Segments=fsmoments2,fsmomentscar/Location_AccountType=AccountPromo_Current";
