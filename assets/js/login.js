@@ -58,6 +58,7 @@
         _sasAdServCall: function(sData) {
             $('#adserve1').html(b1);
             $('#adserve2').html(b2);
+            $('#adserve3').html(b3);
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '',
                 head = document.getElementsByTagName('head')[0],
