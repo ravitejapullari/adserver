@@ -57,9 +57,9 @@
         },
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData.userdata['segments'],
-                _segmentpair = [];
+                _segmentpair = '';
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
-                _segmentpair.push('b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i]);
+                _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
             }
             console.log(_segmentpair);
 

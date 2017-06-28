@@ -10,19 +10,22 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "raviteja": {
                 "segments": {
                     "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
-                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"]
+                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"],
+                    "accounttype": "accountPromo_current"
                 }
             },
             "kishore": {
                 "segments": {
                     "ranks": ["fsmoments1", "homeins1", "fspack1"],
-                    "products": ["fsmomentstravel", "homeinspricing", "fspackhomeprotect"]
+                    "products": ["fsmomentstravel", "homeinspricing", "fspackhomeprotect"],
+                    "accounttype": "accountPromo_current"
                 }
             },
             "rohit": {
                 "segments": {
                     "ranks": ["fsmoments2", "homeins1", "fspack2"],
-                    "products": ["fsmomentstravel", "homeinsgeneric", "fspacktech"]
+                    "products": ["fsmomentstravel", "homeinsgeneric", "fspacktech"],
+                    "accounttype": "accountPromo_current"
                 }
             }
         },
