@@ -89,14 +89,14 @@
             //document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript">'); //</scr' + 'ipt>');
             //document.write('</scr' + 'ipt>');
             var _ajaxCall = $.ajax({
-                method: "GET",
-                crossDomain: true,
-                url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
-                dataType: 'jsonp'
-            }).success(function(response) {
-                console.log(response);
-            });
-            //_ajaxCall.done()
+                    method: "GET",
+                    crossDomain: true,
+                    url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
+                    dataType: 'jsonp'
+                }) //.success(function(response) {
+                //console.log(response);
+                //});
+                //_ajaxCall.done()
 
             var _timer = setTimeout(function() {
                 for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
