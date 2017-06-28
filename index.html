@@ -68,15 +68,15 @@
         </script>
         <script>
             /*var _adserver = "https://bclays-ads.aimatch.com/bclays/bserver";
-                                    var _ad1 = "/b1/Segments=fsmoments1,fsmomentshome/Location_AccountType=accountPromo_current";
-                                    var _ad2 = "/b2/Segments=fsmoments2,fsmomentscar/Location_AccountType=AccountPromo_Current";
-                                    var _ad3 = "/b3/Segments=mortgage2,mortgageneeds/Location_AccountType=AccountPromo_Current";
-                                    var _aimRnd = Math.round(Math.random() * 100000000);
-                                    var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
+                                                                                    var _ad1 = "/b1/Segments=fsmoments1,fsmomentshome/Location_AccountType=accountPromo_current";
+                                                                                    var _ad2 = "/b2/Segments=fsmoments2,fsmomentscar/Location_AccountType=AccountPromo_Current";
+                                                                                    var _ad3 = "/b3/Segments=mortgage2,mortgageneeds/Location_AccountType=AccountPromo_Current";
+                                                                                    var _aimRnd = Math.round(Math.random() * 100000000);
+                                                                                    var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
 
-                                    // bserver ad call – insert the adx variables 
-                                    document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _ad1 + _ad2 + _ad3 + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript">'); //</scr' + 'ipt>');
-                                    document.write('</scr' + 'ipt>');*/
+                                                                                    // bserver ad call – insert the adx variables 
+                                                                                    document.write('<scr' + 'ipt src="' + _adserver + _allAdTags + _ad1 + _ad2 + _ad3 + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript">'); //</scr' + 'ipt>');
+                                                                                    document.write('</scr' + 'ipt>');*/
         </script>
 
     </head>
@@ -159,7 +159,9 @@
                                             <h3>First Time Buyers</h3>
                                             <p>
                                                 <script>
-                                                    document.writeln(b1);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b1);
+                                                    });
                                                 </script>
                                                 <!--script src="https://bclays-ads.aimatch.com/bclays/jserver/Target=fsmoments1/Location_AccountType=AccountPromoCurrent"></script-->
                                                 <!--script src="https://bclays-ads.aimatch.com/bclays/jserver/Segments=fsmoments1,fsmomentshome"></script-->
@@ -176,7 +178,9 @@
                                             <h3>Personal loans</h3>
                                             <p>
                                                 <script>
-                                                    document.writeln(b2);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b2);
+                                                    });
                                                 </script>
                                                 <!--script src="https://bclays-ads.aimatch.com/bclays/jserver/Target=fsmoments2/Location_AccountType=AccountPromoCurrent"></script-->
 
@@ -194,7 +198,9 @@
                                             <h3>Mortgage calculators</h3>
                                             <p>
                                                 <script>
-                                                    document.writeln(b3);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b3);
+                                                    });
                                                 </script>
                                             </p>
                                             <p>Work out your mortgage budget</p>
@@ -207,17 +213,23 @@
                                     <div>
                                         <span class="adserver-images car" style="display:none;">
                                                 <script type="text/javascript">
-                                                    document.writeln(b1);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b1);
+                                                    });
                                                 </script>
                                             </span>
                                         <span class="adserver-images mort" style="display:none;">
                                                 <script type="text/javascript">
-                                                    document.writeln(b2);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b3);
+                                                    });
                                                 </script>
                                             </span>
                                         <span class="adserver-images home" style="display:none;">
                                                 <script type="text/javascript">
-                                                    document.writeln(b3);
+                                                    $(document).ready(function() {
+                                                        document.writeln(b3);
+                                                    });
                                                 </script>
                                             </span>
                                     </div>
