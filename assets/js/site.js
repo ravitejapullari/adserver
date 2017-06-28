@@ -43,10 +43,10 @@ var aimRnd = Math.round(Math.random() * 100000000);
 
 
 // Individual tags for each ad request - increment the adx variable name and the ‘/bx/’ parameter. 
-var ad1 = "/b1/Segments=" + _sasObj.segment.FLIGHTID,
+/*var ad1 = "/b1/Segments=" + _sasObj.segment.FLIGHTID,
     ad2 = "/b2/Segments=" + _sasObj.segment.FCID[0],
-    ad3 = "/b3/Segments=" + _sasObj.segment.FCID[1];
-console.log(adserver, ad1, ad2, ad3);
+    ad3 = "/b3/Segments=" + _sasObj.segment.FCID[1];*/
+//console.log(adserver, ad1, ad2, ad3);
 // bserver ad call – insert the adx variables 
 //document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript">');
 //document.write('</scr' + 'ipt>');
