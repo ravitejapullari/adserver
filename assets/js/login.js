@@ -57,7 +57,9 @@
         },
         _sasAdServCall: function(sData) {
             var _kruxSegments = sData.userdata['segments'];
-
+            for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
+                console.log(_kruxSegments.ranks[i] + _kruxSegments.products[i]);
+            }
             console.log(_kruxSegments);
 
             /*for (var i = 0, j = _segKeys.length; i < j; i++) {
