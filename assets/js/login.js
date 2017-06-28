@@ -68,7 +68,14 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             // bserver ad call – insert the adx variables 
-            var _addscript = '<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>';
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            //script.onload = function() {
+            //  callFunctionFromScript();
+            // }
+            var _addscript = _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC';
+            script.src = _addscript;
+            //'<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>';
             head.appendChild(_addscript); //</scr' + 'ipt>');
             //document.writeln('</scr' + 'ipt>');
         },
