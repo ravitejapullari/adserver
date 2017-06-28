@@ -68,7 +68,8 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             // bserver ad call – insert the adx variables 
-            head.appendChild('<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>'); //</scr' + 'ipt>');
+            var _addscript = '<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>';
+            head.appendChild(_addscript); //</scr' + 'ipt>');
             //document.writeln('</scr' + 'ipt>');
         },
         _aemServCall: function() {
