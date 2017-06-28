@@ -2,22 +2,32 @@
 
 var _barclaysAdserver = _barclaysAdserver || {},
     _barclaysUser = {},
-    _accounts = {
-        "raviteja": ["fsmoments1", "fsmomentshome"],
-        "kishore": ["fsmoments1", "fsmomentstravel", "bluerewards1", "bluerewards"],
-        "rohit": ["fsmoments2", "fsmomentcar"]
-    },
-
     //https: //demo-ads.aimatch.com/demo/hserver/
     //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
-        "segment": {
-            "FLIGHTID": 1494,
-            "FCID": [1519, 1518]
+        "account": {
+            "raviteja": {
+                "segments": {
+                    "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
+                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"]
+                }
+            },
+            "kishore": {
+                "segments": {
+                    "ranks": ["fsmoments1", "homeins1", "fspack1"],
+                    "products": ["fsmomentstravel", "homeinspricing", "fspackhomeprotect"]
+                }
+            },
+            "rohit": {
+                "segments": {
+                    "ranks": ["fsmoments2", "homeins1", "fspack2"],
+                    "products": ["fsmomentstravel", "homeinsgeneric", "fspacktech"]
+                }
+            }
         },
-        "adcallmethod": "jserver",
-        "saswebsever": "https://crtlt2.aimatch.com/demo"
+        "adcallmethod": "bserver",
+        "saswebsever": "https://bclays-ads.aimatch.com/bclays/"
     };
 
 
@@ -25,15 +35,17 @@ var _barclaysAdserver = _barclaysAdserver || {},
 var aimRnd = Math.round(Math.random() * 100000000);
 
 // adserver URL 
-var adserver = _sasObj.saswebsever + '/bserver';
+//var adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
 
 // Ad tag targeting values which will be appended to each ad request section in the bserver ad call 
 //var allAdTags = "/ball/random=" + aimRnd + "/viewid=" + aimRnd;
 
+
+
 // Individual tags for each ad request - increment the adx variable name and the ‘/bx/’ parameter. 
-var ad1 = "/b1/FLIGHTID=" + _sasObj.segment.FLIGHTID,
-    ad2 = "/b2/FCID=" + _sasObj.segment.FCID[0],
-    ad3 = "/b3/FCID=" + _sasObj.segment.FCID[1];
+var ad1 = "/b1/Segments=" + _sasObj.segment.FLIGHTID,
+    ad2 = "/b2/Segments=" + _sasObj.segment.FCID[0],
+    ad3 = "/b3/Segments=" + _sasObj.segment.FCID[1];
 console.log(adserver, ad1, ad2, ad3);
 // bserver ad call – insert the adx variables 
 //document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript">');

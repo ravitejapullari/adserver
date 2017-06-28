@@ -13,7 +13,7 @@
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                         $('#b_username').html(_barclaysUser['username']);
                         if (typeof(Storage) != undefined) {
-                            _barclaysAdserver._accessStorageData();
+                            _barclaysAdserver._accessStorageData(_uname);
                         }
                     }
                 }
@@ -26,16 +26,16 @@
                 _barclaysAdserver._checklogin(_uname, _pword);
             }
         },
-        _accessStorageData: function() {
+        _accessStorageData: function(username) {
             $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             var i = 0,
                 oJson = {},
                 sKey;
             for (; sKey = window.localStorage.key(i); i++) {
                 oJson[sKey] = window.localStorage.getItem(sKey);
-                $('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
+                //$('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
             }
-            oJson['segments'] = _sasObj;
+            oJson['userdata'] = _sasObj.account[username];
             console.log(oJson);
             //_barclaysAdserver._kruxServCall(oJson);
             _barclaysAdserver._sasAdServCall(oJson);
