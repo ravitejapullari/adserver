@@ -38,7 +38,7 @@
             oJson['userdata'] = _sasObj.account[username];
             console.log(oJson);
             //_barclaysAdserver._kruxServCall(oJson);
-            _barclaysAdserver._sasAdServCall(oJson);
+            //_barclaysAdserver._sasAdServCall(oJson);
             //_barclaysAdserver._aemServCall();
         },
         _adAjaxServ: function() {
