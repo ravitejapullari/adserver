@@ -50,7 +50,7 @@ var aimRnd = Math.round(Math.random() * 100000000);
 // bserver ad call – insert the adx variables 
 //document.write('<scr' + 'ipt src="' + adserver + ad1 + ad2 + ad3 + '?" type="text/JavaScript" language="JavaScript">');
 //document.write('</scr' + 'ipt>');
-// End Hide -->
+// End Hide --> 
 
 $(document).ready(function() {
     $('.adserver').on('click', function() {
