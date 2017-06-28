@@ -59,7 +59,7 @@
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '';
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
-                _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
+                _segmentpair += 'b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype + '/';
             }
             console.log(_segmentpair);
 
