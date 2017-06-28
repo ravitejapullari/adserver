@@ -61,7 +61,7 @@
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                 _segmentpair.push(_kruxSegments.ranks[i] + ',' + _kruxSegments.products[i]);
             }
-            console.log(_kruxSegments);
+            console.log(_segmentpair);
 
             /*for (var i = 0, j = _segKeys.length; i < j; i++) {
                 _sasSegPar[i] = _segKeys[i] + '=' + _segmentObj[_segKeys[i]];
