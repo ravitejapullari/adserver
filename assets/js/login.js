@@ -38,7 +38,7 @@
             oJson['userdata'] = _sasObj.account[username];
             console.log(oJson);
             //_barclaysAdserver._kruxServCall(oJson);
-            //_barclaysAdserver._sasAdServCall(oJson);
+            _barclaysAdserver._sasAdServCall(oJson);
             //_barclaysAdserver._aemServCall();
         },
         _adAjaxServ: function() {
@@ -56,7 +56,7 @@
             _barclaysAdserver._adAjaxServ();
         },
         _sasAdServCall: function(sData) {
-            $('#adserve').appendChild(b1);
+            $('#adserve').html(b1);
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '',
                 head = document.getElementsByTagName('head')[0],
