@@ -76,7 +76,7 @@
             var _addscript = _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC';
             script.src = _addscript;
             //'<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>';
-            head.appendChild(_addscript); //</scr' + 'ipt>');
+            head.appendChild(script); //</scr' + 'ipt>');
             //document.writeln('</scr' + 'ipt>');
         },
         _aemServCall: function() {
