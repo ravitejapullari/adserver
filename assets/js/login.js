@@ -56,7 +56,7 @@
             _barclaysAdserver._adAjaxServ();
         },
         _sasAdServCall: function(sData) {
-            var _kruxSegments = sData['segments'],
+            var _kruxSegments = sData.userdata['segments'],
                 _segmentObj = _kruxSegments['kxbarclays_segs'],
                 _segKeys = Object.keys(_kruxSegments['segment']),
                 _sasSegPar = [];
