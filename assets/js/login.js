@@ -59,7 +59,7 @@
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = [];
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
-                _segmentpair.push(_kruxSegments.ranks[i] + ',' + _kruxSegments.products[i]);
+                _segmentpair.push('b' + (i + 1) + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i]);
             }
             console.log(_segmentpair);
 
