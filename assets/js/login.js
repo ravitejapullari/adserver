@@ -76,7 +76,7 @@
                 url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
                 dataType: 'jsonp'
             });
-            var _timerSet = setTimeout(function {
+            var _timerSet = setTimeout(function() {
                 $('#adserve1').html(b1);
                 $('#adserve2').html(b2);
                 $('#adserve3').html(b3);
