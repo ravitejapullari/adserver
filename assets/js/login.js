@@ -56,9 +56,7 @@
             _barclaysAdserver._adAjaxServ();
         },
         _sasAdServCall: function(sData) {
-            //$('#adserve1').html(b1);
-            //$('#adserve2').html(b2);
-            //$('#adserve3').html(b3);
+
             var _kruxSegments = sData.userdata['segments'],
                 _segmentpair = '',
                 head = document.getElementsByTagName('head')[0],
@@ -78,6 +76,11 @@
                 url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
                 dataType: 'jsonp'
             });
+            var _timerSet = setTimeout(function {
+                $('#adserve1').html(b1);
+                $('#adserve2').html(b2);
+                $('#adserve3').html(b3);
+            }, 500);
             // bserver ad call – insert the adx variables 
             //var script = document.createElement('script');
             //script.type = 'text/javascript';
