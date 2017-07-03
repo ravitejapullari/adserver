@@ -25,6 +25,10 @@
         background: #E5F2F8;
     }
     
+    .card.service-section {
+        border-radius: 3px 0;
+    }
+    
     .card.service-section .card-title h4 {
         padding: 8px 5px;
     }
