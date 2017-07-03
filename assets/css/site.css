@@ -21,12 +21,13 @@
         padding: 5px 5px;
     }
     
-    .card {
+    .right-section .card {
         background: #E5F2F8;
+        border-radius: 0;
     }
     
     .card.service-section {
-        border-radius: 3px 0;
+        border-radius: 3px 3px 0 0;
     }
     
     .card.service-section .card-title h4 {
