@@ -69,12 +69,13 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
 
-            $.get(_adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC');
             var _ajaxCall = $.ajax({
                 method: "GET",
                 crossDomain: true,
                 url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
                 dataType: 'jsonp'
+            }).done(function() {
+                console.log('Success');
             });
             var _timerSet = setTimeout(function() {
                 $('#adserve1').html(b1);
