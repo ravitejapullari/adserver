@@ -18,7 +18,12 @@
         background: #007DB8;
         color: #fff;
         margin-bottom: 20px;
-        padding: 10px 15px;
+        padding: 5px 5px;
+    }
+    
+    .card .card-block {
+        padding: .25rem;
+        font-size: 11px;
     }
     
     .brand-logo {
