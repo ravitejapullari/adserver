@@ -73,6 +73,10 @@
         padding: 0;
     }
     
+    .bg-faded {
+        background-color: none;
+    }
+    
     @media (min-width:768px) {
         padding: 0;
     }
