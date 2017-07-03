@@ -7,6 +7,12 @@
         margin-bottom: 30px;
     }
     
+    .card.accounts-heading {
+        border-radius: 0;
+        background: #007DB8;
+        color: #fff;
+    }
+    
     .brand-logo {
         float: left;
         height: 40px;
