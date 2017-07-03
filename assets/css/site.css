@@ -24,6 +24,8 @@
     
     .panel.panel-default .form-group label {
         margin-bottom: 15px;
+        width: 100%;
+        justify-content: left;
     }
     
     .panel.panel-default .login {
