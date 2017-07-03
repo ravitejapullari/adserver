@@ -10,7 +10,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "raviteja": {
                 "segments": {
                     "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
-                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"],
+                    "products": ["fsmomentscar", "fsmomentstravel", "mortgageneeds"],
                     "accounttype": "accountPromo_current"
                 }
             },
