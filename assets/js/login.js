@@ -98,4 +98,4 @@
             console.log('AEM service call');
         }
     }
-})($);
+})(jQuery);
