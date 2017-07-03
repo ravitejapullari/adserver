@@ -22,6 +22,7 @@
         _executeLogin: function() {
             var _uname = $('#username').val(),
                 _pword = $('#userpassword').val();
+            console.log(_uname);
             if (_uname != '' && _pword != '') {
                 _barclaysAdserver._checklogin(_uname, _pword);
             }
