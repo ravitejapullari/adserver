@@ -21,13 +21,18 @@
         padding: 5px 5px;
     }
     
-    .card.service-section {
+    .card {
         background: #E5F2F8;
+    }
+    
+    .card.service-section .card-title h4 {
+        padding: 8px 5px;
     }
     
     .card.service-section .card-title {
         background: #007DB8;
         color: #fff;
+        padding: 0;
     }
     
     .card .card-block {
