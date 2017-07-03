@@ -20,10 +20,8 @@
             }
         },
         _executeLogin: function() {
-            //var _uname = $('#username').val(),
-            // _pword = $('#userpassword').val();
-            var _uname = document.getElementById('username').nodeValue,
-                _pword = document.getElementById('userpassword').nodeValue;
+            var _uname = $('#username').val(),
+                _pword = $('#userpassword').val();
 
             console.log($('#username'));
             if (_uname != '' && _pword != '') {
