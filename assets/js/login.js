@@ -49,8 +49,6 @@
                 url: "",
                 data: {},
                 dataType: "json"
-            }).done(function(msg) {
-
             });
         },
         // Service calls to KRUX, SaS and AEM
@@ -71,7 +69,7 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
 
-
+            $.get(_adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC');
             var _ajaxCall = $.ajax({
                 method: "GET",
                 crossDomain: true,
