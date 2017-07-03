@@ -21,6 +21,15 @@
         padding: 5px 5px;
     }
     
+    .card.service-section {
+        background: #E5F2F8;
+    }
+    
+    .card.service-section .card-title {
+        background: #007DB8;
+        color: #fff;
+    }
+    
     .card .card-block {
         padding: .50rem;
         font-size: 12px;
