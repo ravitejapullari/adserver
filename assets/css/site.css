@@ -2,6 +2,10 @@
         padding: 0 20px;
     }
     
+    header {
+        min-height: 50px;
+    }
+    
     .brand-logo {
         float: left;
         height: 40px;
