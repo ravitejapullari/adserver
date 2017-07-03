@@ -73,6 +73,11 @@
         padding: 0;
     }
     
+    nav.navbar {
+        float: right;
+        margin-top: 25px;
+    }
+    
     .bg-faded {
         background-color: transparent;
     }
