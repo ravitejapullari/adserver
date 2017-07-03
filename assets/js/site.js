@@ -29,7 +29,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
                 }
             }
         },
-        "adcallmethod": "bserver",
+        "adcallmethod": "iserver",
         "saswebsever": "https://bclays-ads.aimatch.com/bclays/"
     };
 
