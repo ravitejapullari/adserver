@@ -147,10 +147,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="https://www.barclays.co.uk/mortgages/mortgage-calculator#/cost/step1" target="_blank" onclick="_barclaysAdserver._selectedProduct('mortgage');">Mortgage <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" onclick="_barclaysAdserver._selectedProduct('mortgage');">Mortgage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.barclays.co.uk/mortgages/first-time-buyers" target="_blank" onclick="_barclaysAdserver._selectedProduct('home');">Buy Home</a>
+                            <a class="nav-link" onclick="_barclaysAdserver._selectedProduct('home');">Buy Home</a>
                         </li>
                     </ul>
                 </div>
@@ -363,8 +363,12 @@
             <script src="assets/js/login.js"></script>
 
         </div>
-        <div class="container-fluid" id="mortgagesection" style="display:none;">mortgagesection</div>
-        <div class="container-fluid" id="homesection" style="display:none;">homesection</div>
+        <div class="container-fluid" id="mortgagesection" style="display:none;">mortgagesection
+            <a class="nav-link" onclick="_barclaysAdserver._selectedProduct('mortgage');">Mortgage</a>
+        </div>
+        <div class="container-fluid" id="homesection" style="display:none;">homesection
+            <a class="nav-link" onclick="_barclaysAdserver._selectedProduct('home');">Buy Home</a>
+        </div>
     </body>
 
     </html>
