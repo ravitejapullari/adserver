@@ -11,6 +11,7 @@
                         $('#loginpage').hide();
                         $('#sucessfull').show();
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
+                        sessionStorage.setItem('username', k);
                         $('#b_username').html(_barclaysUser['username']);
                         if (typeof(Storage) != undefined) {
                             _barclaysAdserver._accessStorageData(k);
