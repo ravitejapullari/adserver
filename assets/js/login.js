@@ -77,8 +77,11 @@
             $('#adserve1').html(b1);
             $('#adserve2').html(b2);
             $('#adserve3').html(b3);
-            $('#sucessfull').hide();
-            $('#' + segment + 'section').show();
+            if (segment === 'mortgage') {
+                $('#sucessfull').hide();
+                $('#' + segment + 'section').show();
+            }
+
         }
     }
 })(jQuery);
