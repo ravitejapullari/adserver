@@ -4,6 +4,8 @@
     _barclaysAdserver = {
         _checklogin: function(k, l) {
             var _userdata = _logindata;
+            sessionStorage.removeItem('username');
+            sessionStorage.removeItem('segment');
             for (var i = 0, j = _userdata.length; i < j; i++) {
                 if (_userdata[i]['username'] === k) {
                     if (_userdata[i]['password'] === l) {
