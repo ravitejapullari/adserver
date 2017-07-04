@@ -17,7 +17,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
             "kishore": {
                 "segments": {
                     "ranks": ["fsmoments1", "homeins1", "fspack1"],
-                    "products": ["fsmomentstravel", "homeinspricing", "fspackhomeprotect"],
+                    "products": ["fsmomentscar", "homeinspricing", "fspackhomeprotect"],
                     "accounttype": "accountPromo_current"
                 }
             },
