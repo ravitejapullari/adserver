@@ -33,7 +33,7 @@
             }
         },
         _accessStorageData: function(username) {
-            $("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
+            //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             var i = 0,
                 oJson = {},
                 sKey;
@@ -42,8 +42,12 @@
                 //$('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
             }
             oJson['userdata'] = _sasObj.account[username];
-            console.log(oJson);
-            _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
+            var _segment = sessionStorage.getItem('segment');
+            if (_segment) {
+                _barclaysAdserver._selectedProduct(_segment);
+            } else {
+                _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
+            }
         },
         _adAjaxServ: function(serviceUrl, servProd) {
             var _ajaxCall = $.ajax({
