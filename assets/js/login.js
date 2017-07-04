@@ -12,8 +12,8 @@
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                         sessionStorage.setItem('username', k);
                         location.href = 'account.html';
-                        /* $('#b_username').html(_barclaysUser['username']);
-                        if (typeof(Storage) != undefined) {
+                        $('#b_username').html(_barclaysUser['username']);
+                        /*if (typeof(Storage) != undefined) {
                             _barclaysAdserver._accessStorageData(k);
                         }*/
                     }
