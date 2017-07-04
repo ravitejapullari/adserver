@@ -30,8 +30,13 @@
         border-radius: 3px 3px 0 0;
     }
     
-    .card.service-section .card-title h4 {
-        padding: 8px 5px;
+    .card.service-section .card-block {
+        padding: 0;
+    }
+    
+    .card.service-section h4.card-title {
+        margin-bottom: 0;
+        padding: 10
     }
     
     .card.service-section .card-title {
@@ -116,11 +121,6 @@
     
     .navbar.navbar-default .container-fluid .navbar-collapse {
         padding: 0;
-    }
-    
-    nav.navbar {
-        float: right;
-        margin-top: 25px;
     }
     
     .bg-faded {
