@@ -80,6 +80,11 @@
         padding: 10px 5px;
     }
     
+    .accounts .card .card-block h3 {
+        color: #0F8ACA;
+        text-decoration: underline;
+    }
+    
     .accounts .input-group-btn {
         width: 100%;
         height: 35px;
@@ -88,7 +93,7 @@
     
     .accounts .input-group-btn .btn {
         text-align: left;
-        font-size: 12px;
+        font-size: 13px;
         color: #0F8ACA;
     }
     
