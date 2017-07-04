@@ -10,13 +10,18 @@
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                         sessionStorage.setItem('username', k);
                         location.href = 'account.html';
-                        $('#b_username').html(_barclaysUser['username']);
+                        /* $('#b_username').html(_barclaysUser['username']);
                         if (typeof(Storage) != undefined) {
                             _barclaysAdserver._accessStorageData(k);
-                        }
+                        }*/
                     }
                 }
             }
+        },
+        _setSegment: function(_segment) {
+            var _setSegment = sessionStorage.setItem('segment', _segment);
+            _barclaysAdserver._selectedProduct(_segment);
+
         },
         _executeLogin: function() {
             var _uname = $('#username').val(),
