@@ -50,6 +50,11 @@
         font-size: 12px;
     }
     
+    .card .card-block.jump-start {
+        padding: 15px 40px;
+        font-size: 11px;
+    }
+    
     .brand-logo {
         float: left;
         height: 40px;
@@ -132,6 +137,10 @@
     
     .adserve a img {
         width: 100%;
+    }
+    
+    .small-font {
+        font-size: 11px;
     }
     
     @media (min-width:768px) {
