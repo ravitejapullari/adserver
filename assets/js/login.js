@@ -41,7 +41,7 @@
             console.log(oJson);
             _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
         },
-        _adAjaxServ: function(serviceUrl) {
+        _adAjaxServ: function(serviceUrl, servProd) {
             var _ajaxCall = $.ajax({
                 method: "GET",
                 crossDomain: true,
@@ -51,15 +51,15 @@
                 console.log('Success');
             });
             var _timerSet = setTimeout(function() {
-                _barclaysAdserver._updateSegments();
+                _barclaysAdserver._updateSegments(servProd);
             }, 500);
         },
         _selectedProduct: function(selProd) {
             var _seleprod = _sasObj.csegment[selProd];
             console.log(_seleprod);
-            _barclaysAdserver._sasAdServCall(_seleprod['segments']);
+            _barclaysAdserver._sasAdServCall(_seleprod['segments'], selProd);
         },
-        _sasAdServCall: function(sData) {
+        _sasAdServCall: function(sData, sProd) {
             var _kruxSegments = sData,
                 _segmentpair = '',
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
@@ -71,12 +71,14 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             var _urlCall = _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC';
-            _barclaysAdserver._adAjaxServ(_urlCall);
+            _barclaysAdserver._adAjaxServ(_urlCall, sProd);
         },
-        _updateSegments: function() {
+        _updateSegments: function(segment) {
             $('#adserve1').html(b1);
             $('#adserve2').html(b2);
             $('#adserve3').html(b3);
+            $('#sucessfull').hide();
+            $('#' + segment + 'section').show();
         }
     }
 })(jQuery);
