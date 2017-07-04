@@ -7,11 +7,9 @@
             for (var i = 0, j = _userdata.length; i < j; i++) {
                 if (_userdata[i]['username'] === k) {
                     if (_userdata[i]['password'] === l) {
-                        console.log(_userdata[i]['username']);
-                        $('#loginpage').hide();
-                        $('#sucessfull').show();
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                         sessionStorage.setItem('username', k);
+                        location.href = 'account.html';
                         $('#b_username').html(_barclaysUser['username']);
                         if (typeof(Storage) != undefined) {
                             _barclaysAdserver._accessStorageData(k);
