@@ -166,7 +166,7 @@
     .bg-faded {
         background-color: transparent;
         border-radius: 5px;
-        border: 1px solid #dedede;
+        /* border: 1px solid #dedede; */
         margin-bottom: 15px
     }
     
