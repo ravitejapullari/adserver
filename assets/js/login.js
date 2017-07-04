@@ -43,13 +43,18 @@
             _barclaysAdserver._sasAdServCall(oJson);
             //_barclaysAdserver._aemServCall();
         },
-        _adAjaxServ: function() {
-            $.ajax({
+        _adAjaxServ: function(serviceUrl) {
+            var _ajaxCall = $.ajax({
                 method: "GET",
-                url: "",
-                data: {},
-                dataType: "json"
+                crossDomain: true,
+                url: serviceUrl,
+                dataType: 'jsonp'
+            }).done(function() {
+                console.log('Success');
             });
+            var _timerSet = setTimeout(function() {
+                _barclaysAdserver._updateSegments();
+            }, 500);
         },
         // Service calls to KRUX, SaS and AEM
         _kruxServCall: function(kData) {
@@ -68,34 +73,13 @@
             console.log(_segmentpair);
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
-
-            var _ajaxCall = $.ajax({
-                method: "GET",
-                crossDomain: true,
-                url: _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC',
-                dataType: 'jsonp'
-            }).done(function() {
-                console.log('Success');
-            });
-            var _timerSet = setTimeout(function() {
-                $('#adserve1').html(b1);
-                $('#adserve2').html(b2);
-                $('#adserve3').html(b3);
-            }, 500);
-            // bserver ad call – insert the adx variables 
-            //var script = document.createElement('script');
-            //script.type = 'text/javascript';
-            //script.onload = function() {
-            //  callFunctionFromScript();
-            // }
-            //var _addscript = _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC';
-            //script.src = _addscript;
-            //'<scr' + 'ipt src="' + _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC" type="text/JavaScript" language="JavaScript"></scr' + 'ipt>';
-            //document.writeln('</scr' + 'ipt>');
+            var _urlCall = _adserver + _allAdTags + _segmentpair + '?api_key=rlMrAZKoTouXh0SNxInC';
+            _barclaysAdserver._adAjaxServ(_urlCall);
         },
-        _aemServCall: function() {
-            _barclaysAdserver._adAjaxServ();
-            console.log('AEM service call');
+        _updateSegments: function() {
+            $('#adserve1').html(b1);
+            $('#adserve2').html(b2);
+            $('#adserve3').html(b3);
         }
     }
 })(jQuery);
