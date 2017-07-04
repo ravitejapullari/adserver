@@ -85,11 +85,6 @@
             $('#adserve1').html(b1);
             $('#adserve2').html(b2);
             $('#adserve3').html(b3);
-            if ((segment === 'mortgage') || (segment === 'home')) {
-                $('#sucessfull').toggle();
-                $('#' + segment + 'section').toggle();
-            }
-
         }
     }
 })(jQuery);
