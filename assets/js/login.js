@@ -56,6 +56,7 @@
         },
         _selectedProduct: function(selProd) {
             var _seleprod = _sasObj.csegment[selProd];
+            console.log(_seleprod);
             _barclaysAdserver._sasAdServCall(_seleprod);
         },
         _sasAdServCall: function(sData) {
