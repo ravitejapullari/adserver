@@ -9,15 +9,15 @@ var _barclaysAdserver = _barclaysAdserver || {},
         "account": {
             "raviteja": {
                 "segments": {
-                    "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
-                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"],
+                    "ranks": ["homeins1", "fsmoments2", "mortgage2"],
+                    "products": ["homeinsgeneric", "fsmomentscar", "mortgageneeds"],
                     "accounttype": "accountPromo_current"
                 }
             },
             "kishore": {
                 "segments": {
-                    "ranks": ["fsmoments1", "homeins1", "fspack1"],
-                    "products": ["fsmomentscar", "homeinspricing", "fspackhomeprotect"],
+                    "ranks": ["overdraft1", "homeins1", "fspack1"],
+                    "products": ["overdraftunexpected", "homeinspricing", "fspackhomeprotect"],
                     "accounttype": "accountPromo_current"
                 }
             },
