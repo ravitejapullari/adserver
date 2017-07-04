@@ -300,6 +300,7 @@
         <script>
             $(document).ready(function() {
                 var _userName = sessionStorage.getItem('username');
+                console.log(_userName);
                 if (_userName) {
                     _barclaysAdserver._accessStorageData(_userName);
                 } else {
