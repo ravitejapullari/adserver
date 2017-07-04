@@ -27,15 +27,15 @@
         border-radius: 0;
     }
     
-    .card.service-section {
+    .right-section .card.service-section {
         border-radius: 3px 3px 0 0;
     }
     
-    .card.service-section .card-block {
+    .right-section .card.service-section .card-block {
         padding: 0;
     }
     
-    .card.service-section h4.card-title {
+    .right-section .card.service-section h4.card-title {
         margin-bottom: 0;
         padding: 10
     }
@@ -43,7 +43,6 @@
     .right-section .card.service-section .card-title {
         background: #007DB8;
         color: #fff;
-        padding: 0;
     }
     
     .card .card-block {
