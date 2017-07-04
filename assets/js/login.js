@@ -54,11 +54,13 @@
                 _barclaysAdserver._updateSegments();
             }, 500);
         },
+        _selectedProduct: function(selProd) {
+            var _seleprod = _sasObj.csegment[selProd];
+            _barclaysAdserver._sasAdServCall(_seleprod);
+        },
         _sasAdServCall: function(sData) {
-
             var _kruxSegments = sData,
                 _segmentpair = '',
-                head = document.getElementsByTagName('head')[0],
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                 _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;

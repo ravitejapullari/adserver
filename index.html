@@ -126,7 +126,7 @@
                                             <label for="exampleInputEmail2">Password</label><br>
                                             <input type="password" class="form-control" id="userpassword" placeholder="Password">
                                         </div>
-                                        <a onclick="_barclaysAdserver._executeLogin();" class="btn btn-default pull-right">Login</a>
+                                        <a onclick="_barclaysAdserver._executeLogin();" class="btn btn-primary pull-right">Login</a>
                                     </form>
                                 </div>
                             </div>
@@ -147,10 +147,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Mortgage <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#" onclick="_barclaysAdserver._sasAdServCall('mortgage');">Mortgage <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Buy Home</a>
+                            <a class="nav-link" href="#" onclick="_barclaysAdserver._sasAdServCall('home');">Buy Home</a>
                         </li>
                         <!--li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
