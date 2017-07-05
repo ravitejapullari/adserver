@@ -1,0 +1,43 @@
+_sasObj = {
+        "account": {
+            "raviteja": {
+                "segments": {
+                    "ranks": ["homeins1", "fsmoments2", "mortgage2"],
+                    "products": ["homeinsgeneric", "fsmomentscar", "mortgageneeds"],
+                    "accounttype": "accountPromo_current"
+                }
+            },
+            "kishore": {
+                "segments": {
+                    "ranks": ["overdraft1", "homeins1", "fspack1"],
+                    "products": ["overdraftunexpected", "homeinspricing", "fspackhomeprotect"],
+                    "accounttype": "accountPromo_current"
+                }
+            },
+            "rohit": {
+                "segments": {
+                    "ranks": ["fsmoments2", "homeins1", "fspack2"],
+                    "products": ["fsmomentstravel", "homeinsgeneric", "fspacktech"],
+                    "accounttype": "accountPromo_current"
+                }
+            }
+        },
+        "adcallmethod": "bserver",
+        "saswebsever": "https://bclays-ads.aimatch.com/bclays/",
+        "csegment": {
+            "mortgage": {
+                "segments": {
+                    "ranks": ["mortgage2", "fsmoments2", "mortgage2"],
+                    "products": ["mortgageneeds", "fsmomentscar", "mortgageneeds"],
+                    "accounttype": "accountPromo_current"
+                }
+            },
+            "home": {
+                "segments": {
+                    "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
+                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"],
+                    "accounttype": "accountPromo_current"
+                }
+            }
+        }
+    };
