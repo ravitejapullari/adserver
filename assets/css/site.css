@@ -93,6 +93,10 @@
         font-size: 12px;
     }
     
+    .right-section .card.service-section .card-block {
+        padding: .50rem;
+    }
+    
     .card .card-block.jump-start {
         padding: 15px 40px;
         font-size: 11px;
