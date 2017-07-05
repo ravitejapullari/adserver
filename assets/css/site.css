@@ -1,6 +1,5 @@
     body {
         padding: 0 20px;
-        margin-bottom: 100px;
     }
     
     p,
@@ -188,7 +187,8 @@
         font-size: 1em;
         line-height: 1.5;
         margin: 0;
-        padding: 0 0 32px
+        padding: 0 0 32px;
+        margin-top: 20px
     }
     
     @media (min-width:768px) {
