@@ -74,6 +74,10 @@
         border-radius: 3px 3px 0 0;
     }
     
+    .right-section .card .card-block {
+        padding: .50rem;
+    }
+    
     .right-section .card.service-section .card-block {
         padding: 0;
     }
@@ -91,10 +95,6 @@
     .card .card-block {
         padding: .50rem;
         font-size: 12px;
-    }
-    
-    .right-section .card.service-section .card-block {
-        padding: .50rem;
     }
     
     .card .card-block.jump-start {
