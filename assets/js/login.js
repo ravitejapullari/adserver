@@ -62,7 +62,7 @@
             });
             var _timerSet = setTimeout(function() {
                 _barclaysAdserver._updateSegments(servProd);
-            }, 500);
+            }, 1000);
         },
         _selectedProduct: function(selProd) {
             var _seleprod = _sasObj.csegment[selProd];
