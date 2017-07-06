@@ -196,5 +196,14 @@
     }
     
     @media (min-width:768px) {
-        padding: 0;
+        body {
+            padding: 0;
+        }
+        .navbar {
+            position: relative;
+            z-index: 1000;
+        }
+        .navbar-collapse.collapse.show {
+            margin-top: 40px;
+        }
     }
