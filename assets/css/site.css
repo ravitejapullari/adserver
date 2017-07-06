@@ -181,10 +181,14 @@
         font-size: 11px;
     }
     
+    footer {
+        margin-top: 50px;
+    }
+    
     footer p {
         clear: both;
         color: #8c8c8c;
-        font-size: 1em;
+        font-size: .75em;
         line-height: 1.5;
         margin: 0;
         padding: 0 0 32px;
