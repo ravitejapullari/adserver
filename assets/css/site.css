@@ -202,7 +202,7 @@
         .navbar {
             position: relative;
             z-index: 1000;
-            margin-top: -75px;
+            margin-top: -75px !important;
             width: 100%;
         }
         .navbar-collapse.collapse.show {
