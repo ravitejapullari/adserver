@@ -1,29 +1,21 @@
 var _logindata = [{
         'username': 'raviteja',
-        'password': 'cts12345',
-        'data': {
-            'segmentid': 'kx12341'
-        }
+        'password': 'cts12345'
     },
     {
         'username': 'kishore',
-        'password': 'cts12345',
-        'data': {
-            'segmentid': 'kx12342'
-        }
+        'password': 'cts12345'
     },
     {
         'username': 'amit',
-        'password': 'cts12345',
-        'data': {
-            'segmentid': 'kx12343'
-        }
+        'password': 'cts12345'
     },
     {
         'username': 'rohit',
-        'password': 'cts12345',
-        'data': {
-            'segmentid': 'kx12344'
-        }
+        'password': 'cts12345'
+    },
+    {
+        'username': 'majid',
+        'password': 'krux12345'
     }
 ];
