@@ -12,9 +12,6 @@
                         _barclaysUser = _userdata[i]; // location.href = 'barclays-in.html';
                         sessionStorage.setItem('username', k);
                         location.href = 'account.html';
-                        /*if (typeof(Storage) != undefined) {
-                            _barclaysAdserver._accessStorageData(k);
-                        }*/
                     }
                 }
             }
@@ -34,6 +31,10 @@
             }
         },
         _accessStorageData: function(username) {
+            if (typeof(Storage) != undefined) {
+                //_barclaysAdserver._accessStorageData(k);
+            }
+            dataLayer.user.name = username;
             //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             $('#b_username').html(username);
             var i = 0,
