@@ -34,7 +34,7 @@
             if (typeof(Storage) != undefined) {
                 //_barclaysAdserver._accessStorageData(k);
             }
-            dataLayer.user.name = "raviteja.pullari@barclayscorp.com"; //username;
+            dataLayer.user.userId = "raviteja.pullari@barclayscorp.com"; //username;
             console.log(dataLayer);
             //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             $('#b_username').html(username);
