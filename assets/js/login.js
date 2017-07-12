@@ -35,6 +35,7 @@
                 //_barclaysAdserver._accessStorageData(k);
             }
             dataLayer.user.name = username;
+            console.log(dataLayer);
             //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             $('#b_username').html(username);
             var i = 0,
