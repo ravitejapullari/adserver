@@ -35,7 +35,7 @@
                 //_barclaysAdserver._accessStorageData(k);
             }
             dataLayer.user.userId = "raviteja.pullari@barclayscorp.com"; //username;
-            console.log(dataLayer);
+            console.log(dataLayer.kxbarclays_bank_allsegs.split(","));
             //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
             $('#b_username').html(username);
             var i = 0,
