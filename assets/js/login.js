@@ -45,7 +45,7 @@
                 oJson[sKey] = window.localStorage.getItem(sKey);
                 //$('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
             }
-            console.log(oJson.kxbarclays_bank_allsegs.split(","));
+            //console.log(oJson.kxbarclays_bank_allsegs.split(","));
             oJson['userdata'] = _sasObj.account[username];
             var _segment = sessionStorage.getItem('segment');
             if (_segment) {
