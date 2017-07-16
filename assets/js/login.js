@@ -47,12 +47,12 @@
                 oJson['userdata'] = _sasObj.account[username];
                 var _segment = sessionStorage.getItem('segment');
                 if (_segment) {
-                    //_barclaysAdserver._selectedProduct(_segment);
-                    if (_segment === "mortgage") {
+                    _barclaysAdserver._selectedProduct(_segment);
+                    /*if (_segment === "mortgage") {
                         $('#adserve1').html(b3);
                     } else if (_segment === "home") {
                         $('#adserve1').html(b4);
-                    }
+                    }*/
                 } else {
                     _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
                 }
@@ -88,6 +88,13 @@
             console.log(_segmentsUrl);
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
+            if (!sProd) {
+                var _urlCall = _adserver + _allAdTags + _segmentsUrl1 + '?api_key=rlMrAZKoTouXh0SNxInC';
+            } else if (sProd == "mortgage") {
+                var _urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
+            } else if (sProd == "home") {
+                var _urlCall = _adserver + _allAdTags + _segmentsUrl3 + '?api_key=rlMrAZKoTouXh0SNxInC';
+            }
             var _urlCall = _adserver + _allAdTags + _segmentsUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
             _barclaysAdserver._adAjaxServ(_urlCall, sProd);
         },

@@ -59,10 +59,12 @@ var _barclaysAdserver = _barclaysAdserver || {},
         ]
     };
 
-var _segmentsUrl = "/b1/Segments=rz50tr7f5,rz501emcp/Location_AccountType=accountPromo_current" +
-    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current" +
-    "/b3/Segments=rz53rcn97,rz53w9t8u/Location_AccountType=accountPromo_current" +
-    "/b4/Segments=rz5288m62,rz53lp9xl/Location_AccountType=accountPromo_current";
+var _segmentsUrl1 = "/b1/Segments=rz50tr7f5,rz501emcp/Location_AccountType=accountPromo_current" +
+    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
+var _segmentsUrl2 = "/b1/Segments=rz53rcn97,rz53w9t8u/Location_AccountType=accountPromo_current" +
+    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
+var _segmentsUrl3 = "/b1/Segments=rz5288m62,rz53lp9xl/Location_AccountType=accountPromo_current" +
+    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
 
 // Cache-busting and viewid value 
 var aimRnd = Math.round(Math.random() * 100000000);
