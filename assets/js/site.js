@@ -46,9 +46,23 @@ var _barclaysAdserver = _barclaysAdserver || {},
                     "accounttype": "accountPromo_current"
                 }
             }
-        }
+        },
+        segments: [
+            { "fsmoments1": "rz50tr7f5" },
+            { "fsmomentshome": "rz501emcp" },
+            { "fspack2": "rz51f40uj" },
+            { "fspackhomeprotect": "rz51qefi5" },
+            { "mortgage1": "rz53rcn97" },
+            { "mortgagecosts": "rz53w9t8u" },
+            { "homeins1": "rz5288m62" },
+            { "homeinspricing": "rz53lp9xl" }
+        ]
     };
 
+var _segmentsUrl = "/b1/Segments=rz50tr7f5,rz501emcp/Location_AccountType=accountPromo_current" +
+    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current" +
+    "/b3/Segments=rz53rcn97,rz53w9t8u/Location_AccountType=accountPromo_current" +
+    "/b4/Segments=rz5288m62,rz53lp9xl/Location_AccountType=accountPromo_current";
 
 // Cache-busting and viewid value 
 var aimRnd = Math.round(Math.random() * 100000000);
