@@ -86,7 +86,7 @@
                 _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
             }
             //_segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
-            console.log(_segmentsUrl);
+            //console.log(_segmentsUrl);
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             if (!sProd) {
