@@ -80,6 +80,7 @@
         _sasAdServCall: function(sData, sProd) {
             var _kruxSegments = sData,
                 _segmentpair = '',
+                _urlCall = '',
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
             for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
                 _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
@@ -89,13 +90,13 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             if (!sProd) {
-                var _urlCall = _adserver + _allAdTags + _segmentsUrl1 + '?api_key=rlMrAZKoTouXh0SNxInC';
+                _urlCall = _adserver + _allAdTags + _segmentsUrl1 + '?api_key=rlMrAZKoTouXh0SNxInC';
             } else if (sProd == "mortgage") {
-                var _urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
+                _urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
             } else if (sProd == "home") {
-                var _urlCall = _adserver + _allAdTags + _segmentsUrl3 + '?api_key=rlMrAZKoTouXh0SNxInC';
+                _urlCall = _adserver + _allAdTags + _segmentsUrl3 + '?api_key=rlMrAZKoTouXh0SNxInC';
             }
-            var _urlCall = _adserver + _allAdTags + _segmentsUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
+            //var _urlCall = _adserver + _allAdTags + _segmentsUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
             _barclaysAdserver._adAjaxServ(_urlCall, sProd);
         },
         _updateSegments: function(segment) {
