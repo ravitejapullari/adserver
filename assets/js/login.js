@@ -31,7 +31,7 @@
             }
         },
         _accessStorageData: function(username) {
-            if ((typeof(Storage) != undefined) && sessionStorage.segment == undefined) {
+            if ((typeof(Storage) != undefined) && (sessionStorage.segment == undefined)) {
                 dataLayer.user.userId = username;
                 console.log(dataLayer);
                 //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
