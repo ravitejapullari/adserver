@@ -31,7 +31,7 @@
             }
         },
         _accessStorageData: function(username) {
-            if ((typeof(Storage) != undefined) && (sessionStorage.segment == undefined)) {
+            if (typeof(Storage) != undefined) {
                 dataLayer.user.userId = username;
                 console.log(dataLayer);
                 //$("#kruxid").html(localStorage.getItem("kxbarclays_kuid"));
@@ -47,15 +47,14 @@
                 oJson['userdata'] = _sasObj.account[username];
                 var _segment = sessionStorage.getItem('segment');
                 if (_segment) {
-                    _barclaysAdserver._selectedProduct(_segment);
+                    //_barclaysAdserver._selectedProduct(_segment);
+                    if (_segment === "mortgage") {
+                        $('#adserve1').html(b3);
+                    } else if (_segment === "home") {
+                        $('#adserve1').html(b4);
+                    }
                 } else {
                     _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
-                }
-            } else {
-                if (sessionStorage.segment === "mortgage") {
-                    $('#adserve1').html(b3);
-                } else if (sessionStorage.segment === "home") {
-                    $('#adserve1').html(b4);
                 }
             }
 
