@@ -83,7 +83,7 @@
             console.log(_segmentsUrl);
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
-            var _urlCall = _adserver + _allAdTags + _segmentUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
+            var _urlCall = _adserver + _allAdTags + _segmentsUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
             _barclaysAdserver._adAjaxServ(_urlCall, sProd);
         },
         _updateSegments: function(segment) {
