@@ -75,7 +75,7 @@
         _selectedProduct: function(selProd) {
             var _seleprod = _sasObj.csegment[selProd];
             console.log(_seleprod);
-            _barclaysAdserver._sasAdServCall(_seleprod['segments'], selProd);
+            _barclaysAdserver._sasAdServCall(oJson);
         },
         _sasAdServCall: function(sData, sProd) {
             var _kruxSegments = sData,
