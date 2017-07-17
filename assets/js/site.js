@@ -6,7 +6,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
     //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
-        "account": {
+        /*"account": {
             "raviteja": {
                 "segments": {
                     "ranks": ["homeins1", "fsmoments2", "mortgage2"],
@@ -28,7 +28,7 @@ var _barclaysAdserver = _barclaysAdserver || {},
                     "accounttype": "accountPromo_current"
                 }
             }
-        },
+        },*/
         "adcallmethod": "bserver",
         "saswebsever": "https://bclays-ads.aimatch.com/bclays/",
         segments: [
@@ -45,12 +45,12 @@ var _barclaysAdserver = _barclaysAdserver || {},
         ]
     };
 
-var _segmentsUrl1 = "/b1/Segments=rz533ra90,rz536u2oa/Location_AccountType=accountPromo_current" +
+/* var _segmentsUrl1 = "/b1/Segments=rz533ra90,rz536u2oa/Location_AccountType=accountPromo_current" +
     "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
 var _segmentsUrl2 = "/b1/Segments=rz53rcn97,rz53w9t8u/Location_AccountType=accountPromo_current" +
     "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
 var _segmentsUrl3 = "/b1/Segments=rz5288m62,rz53lp9xl/Location_AccountType=accountPromo_current" +
-    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
+    "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current"; */
 
 // Cache-busting and viewid value 
 var aimRnd = Math.round(Math.random() * 100000000);
