@@ -46,16 +46,16 @@
                 //console.log(oJson.kxbarclays_bank_allsegs.split(","));
                 //oJson['userdata'] = _sasObj.account[username];
                 var _segment = sessionStorage.getItem('segment');
-                if (_segment) {
+                /*if (_segment) {
                     _barclaysAdserver._selectedProduct(_segment);
                     /*if (_segment === "mortgage") {
                         $('#adserve1').html(b3);
                     } else if (_segment === "home") {
                         $('#adserve1').html(b4);
-                    }*/
-                } else {
-                    _barclaysAdserver._sasAdServCall(oJson);
-                }
+                    }
+                } else {*/
+                _barclaysAdserver._sasAdServCall(oJson);
+                //}
             }
 
         },
