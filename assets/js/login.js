@@ -90,7 +90,7 @@
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             //if (!sProd) {
-            _urlCall = _adserver + _allAdTags + '/b1/Segments' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings?api_key=rlMrAZKoTouXh0SNxInC';
+            _urlCall = _adserver + _allAdTags + '/b1/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings?api_key=rlMrAZKoTouXh0SNxInC';
             //} else if (sProd == "mortgage") {
             //_urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
             // } else if (sProd == "home") {
