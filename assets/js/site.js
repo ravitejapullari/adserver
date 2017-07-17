@@ -6,43 +6,8 @@ var _barclaysAdserver = _barclaysAdserver || {},
     //site=barclays.com/area=barclayshomepage/kruxinterestcategory=cars/kruxgender=female/random=33
 
     _sasObj = {
-        /*"account": {
-            "raviteja": {
-                "segments": {
-                    "ranks": ["homeins1", "fsmoments2", "mortgage2"],
-                    "products": ["homeinsgeneric", "fsmomentscar", "mortgageneeds"],
-                    "accounttype": "accountPromo_current"
-                }
-            },
-            "kishore": {
-                "segments": {
-                    "ranks": ["overdraft1", "homeins1", "fspack1"],
-                    "products": ["overdraftunexpected", "homeinspricing", "fspackhomeprotect"],
-                    "accounttype": "accountPromo_current"
-                }
-            },
-            "rohit": {
-                "segments": {
-                    "ranks": ["fsmoments2", "homeins1", "fspack2"],
-                    "products": ["fsmomentstravel", "homeinsgeneric", "fspacktech"],
-                    "accounttype": "accountPromo_current"
-                }
-            }
-        },*/
         "adcallmethod": "bserver",
-        "saswebsever": "https://bclays-ads.aimatch.com/bclays/",
-        segments: [
-            { "fsmoments1": "rz50tr7f5" },
-            { "fsmomentshome": "rz501emcp" },
-            { "fspack2": "rz51f40uj" },
-            { "fspackhomeprotect": "rz51qefi5" },
-            { "mortgage1": "rz53rcn97" },
-            { "mortgagecosts": "rz53w9t8u" },
-            { "homeins1": "rz5288m62" },
-            { "homeinspricing": "rz53lp9xl" },
-            { "overdraft1": "rz533ra90" },
-            { "overdraftunexpected": "rz536u2oa" }
-        ]
+        "saswebsever": "https://bclays-ads.aimatch.com/bclays/"
     };
 
 /* var _segmentsUrl1 = "/b1/Segments=rz533ra90,rz536u2oa/Location_AccountType=accountPromo_current" +
