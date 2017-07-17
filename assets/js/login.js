@@ -44,7 +44,7 @@
                     //$('#storagedata').append('<tr><td>' + sKey + '</td><td>' + window.localStorage.getItem(sKey) + '</td></tr>');
                 }
                 //console.log(oJson.kxbarclays_bank_allsegs.split(","));
-                oJson['userdata'] = _sasObj.account[username];
+                //oJson['userdata'] = _sasObj.account[username];
                 var _segment = sessionStorage.getItem('segment');
                 if (_segment) {
                     _barclaysAdserver._selectedProduct(_segment);
@@ -54,7 +54,7 @@
                         $('#adserve1').html(b4);
                     }*/
                 } else {
-                    _barclaysAdserver._sasAdServCall(oJson.userdata['segments']);
+                    _barclaysAdserver._sasAdServCall(oJson);
                 }
             }
 
@@ -82,20 +82,20 @@
                 _segmentpair = '',
                 _urlCall = '',
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
-            for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
-                _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
-            }
+            //for (var i = 0, j = _kruxSegments.ranks.length; i < j; i++) {
+            //  _segmentpair += '/b' + (i + 1) + '/Segments=' + _kruxSegments.ranks[i] + ',' + _kruxSegments.products[i] + '/Location_AccountType=' + _kruxSegments.accounttype;
+            // }
             //_segmentpair = _segmentpair.slice(0, _segmentpair.length - 1);
             //console.log(_segmentsUrl); 
             var _aimRnd = Math.round(Math.random() * 100000000);
             var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
-            if (!sProd) {
-                _urlCall = _adserver + _allAdTags + _segmentsUrl1 + '?api_key=rlMrAZKoTouXh0SNxInC';
-            } else if (sProd == "mortgage") {
-                _urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
-            } else if (sProd == "home") {
-                _urlCall = _adserver + _allAdTags + _segmentsUrl3 + '?api_key=rlMrAZKoTouXh0SNxInC';
-            }
+            //if (!sProd) {
+            _urlCall = _adserver + _allAdTags + '/b1/Segments' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings?api_key=rlMrAZKoTouXh0SNxInC';
+            //} else if (sProd == "mortgage") {
+            //_urlCall = _adserver + _allAdTags + _segmentsUrl2 + '?api_key=rlMrAZKoTouXh0SNxInC';
+            // } else if (sProd == "home") {
+            //  _urlCall = _adserver + _allAdTags + _segmentsUrl3 + '?api_key=rlMrAZKoTouXh0SNxInC';
+            //}
             //var _urlCall = _adserver + _allAdTags + _segmentsUrl + '?api_key=rlMrAZKoTouXh0SNxInC';
             _barclaysAdserver._adAjaxServ(_urlCall, sProd);
         },

@@ -31,22 +31,6 @@ var _barclaysAdserver = _barclaysAdserver || {},
         },
         "adcallmethod": "bserver",
         "saswebsever": "https://bclays-ads.aimatch.com/bclays/",
-        "csegment": {
-            "mortgage": {
-                "segments": {
-                    "ranks": ["mortgage2", "fsmoments2", "mortgage2"],
-                    "products": ["mortgageneeds", "fsmomentscar", "mortgageneeds"],
-                    "accounttype": "accountPromo_current"
-                }
-            },
-            "home": {
-                "segments": {
-                    "ranks": ["fsmoments1", "fsmoments2", "mortgage2"],
-                    "products": ["fsmomentshome", "fsmomentscar", "mortgageneeds"],
-                    "accounttype": "accountPromo_current"
-                }
-            }
-        },
         segments: [
             { "fsmoments1": "rz50tr7f5" },
             { "fsmomentshome": "rz501emcp" },
