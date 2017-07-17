@@ -55,11 +55,13 @@ var _barclaysAdserver = _barclaysAdserver || {},
             { "mortgage1": "rz53rcn97" },
             { "mortgagecosts": "rz53w9t8u" },
             { "homeins1": "rz5288m62" },
-            { "homeinspricing": "rz53lp9xl" }
+            { "homeinspricing": "rz53lp9xl" },
+            { "overdraft1": "rz533ra90" },
+            { "overdraftunexpected": "rz536u2oa" }
         ]
     };
 
-var _segmentsUrl1 = "/b1/Segments=rz50tr7f5,rz501emcp/Location_AccountType=accountPromo_current" +
+var _segmentsUrl1 = "/b1/Segments=rz533ra90,rz536u2oa/Location_AccountType=accountPromo_current" +
     "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
 var _segmentsUrl2 = "/b1/Segments=rz53rcn97,rz53w9t8u/Location_AccountType=accountPromo_current" +
     "/b2/Segments=rz51f40uj,rz51qefi5/Location_AccountType=accountPromo_current";
