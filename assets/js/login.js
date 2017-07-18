@@ -40,11 +40,12 @@
                 for (; sKey = window.localStorage.key(i); i++) {
                     oJson[sKey] = window.localStorage.getItem(sKey);
                 }
-                var _segment = sessionStorage.getItem('segment');
-                _barclaysAdserver._sasAdServCall(oJson);
+                var _timeSet = setTimeout(function() {
+                    _barclaysAdserver._sasAdServCall(oJson);
+                }, 0);
             }
         },
-        _adAjaxServ: function(serviceUrl, servProd) {
+        _adAjaxServ: function(serviceUrl) {
             var _ajaxCall = $.ajax({
                 method: "GET",
                 crossDomain: true,
@@ -54,7 +55,7 @@
                 console.log('Success');
             });
             var _timerSet = setTimeout(function() {
-                _barclaysAdserver._updateSegments(servProd);
+                _barclaysAdserver._updateSegments();
             }, 1000);
         },
         _selectedProduct: function(selProd) {
@@ -67,12 +68,10 @@
                 _segmentpair = '',
                 _urlCall = '',
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
-            var _aimRnd = Math.round(Math.random() * 100000000);
-            var _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
             _urlCall = _adserver + _barclaysAdserver._cacheBuster() + '/b1/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings?api_key=rlMrAZKoTouXh0SNxInC';
-            _barclaysAdserver._adAjaxServ(_urlCall, sProd);
+            _barclaysAdserver._adAjaxServ(_urlCall);
         },
-        _updateSegments: function(segment) {
+        _updateSegments: function() {
             $('#adserve1').html(b1);
             $('#adserve2').html(b2);
             $('#adserve3').html(b3);
