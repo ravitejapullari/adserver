@@ -79,7 +79,7 @@
         },
         _cacheBuster: function() {
             var _aimRnd = Math.round(Math.random() * 100000000);
-            return _allAdTags = "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
+            return "/ball/random=" + _aimRnd + "/viewid=" + _aimRnd;
         }
     }
 })(jQuery);
