@@ -1,5 +1,5 @@
 'use strict';
-
+var _setTimeInterval = '';
 (function($) {
     _barclaysAdserver = {
         _checklogin: function(k, l) {
@@ -40,9 +40,12 @@
                 for (; sKey = window.localStorage.key(i); i++) {
                     oJson[sKey] = window.localStorage.getItem(sKey);
                 }
-                var _timeSet = setTimeout(function() {
-                    _barclaysAdserver._sasAdServCall(oJson);
-                }, 0);
+                _setTimeInterval = setInterval(function() {
+                    if (localStorage.getItem('kxbarclays_bank_segs')) {
+                        clearInterval(_setTimeInterval);
+                        _barclaysAdserver._sasAdServCall(oJson);
+                    }
+                }, 10);
             }
         },
         _adAjaxServ: function(serviceUrl) {
