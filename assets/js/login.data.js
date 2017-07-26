@@ -17,5 +17,9 @@ var _logindata = [{
     {
         'username': 'majid',
         'password': 'krux12345'
+    },
+    {
+        'username': 'neil',
+        'paswword': 'context12345'
     }
 ];
