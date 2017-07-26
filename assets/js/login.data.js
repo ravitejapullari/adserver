@@ -20,6 +20,6 @@ var _logindata = [{
     },
     {
         'username': 'neil',
-        'paswword': 'context12345'
+        'password': 'context12345'
     }
 ];
