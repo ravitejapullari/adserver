@@ -505,16 +505,11 @@
         </footer>
         <script>
             $(document).ready(function() {
-                var _userName = sessionStorage.getItem('username');
-                console.log(_userName);
-                if (_userName) {
-                    _barclaysAdserver._accessStorageData(_userName);
-                }
 
                 var _ajaxCall = $.ajax({
                     method: "GET",
                     crossDomain: true,
-                    url: serviceUrl,
+                    url: loadTestUrl,
                     dataType: 'jsonp'
                 }).done(function() {
                     console.log('Success');
