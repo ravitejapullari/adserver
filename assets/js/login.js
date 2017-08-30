@@ -71,7 +71,7 @@ var _setTimeInterval = '';
                 _segmentpair = '',
                 _urlCall = '',
                 _adserver = _sasObj.saswebsever + _sasObj.adcallmethod;
-            _urlCall = _adserver + _barclaysAdserver._cacheBuster() + '/b1/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings/b3/Segments=' + sData.kxbarclays_bank_segs + '/?api_key=rlMrAZKoTouXh0SNxInC';
+            _urlCall = _adserver + _barclaysAdserver._cacheBuster() + '/b1/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current/b2/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_savings/b3/Segments=' + sData.kxbarclays_bank_segs + '/Location_AccountType=accountPromo_current?api_key=rlMrAZKoTouXh0SNxInC';
             _barclaysAdserver._adAjaxServ(_urlCall);
         },
         _updateSegments: function() {
