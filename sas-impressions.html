@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <style>
+                             .jumbotron{padding-top:20px;}
+                             .form-section{margin:20px 0;}
+              </style>
+              <script>
+                             _sasConObj = {
+    "HIdP": "2CF4D1DEF96B0F5EA5612746A693992C2FB1F2CA82DF58DAA6A42A2B0E69ACBC3CC40286DCF04B992DDC852A25BDBB8BC9FE102E641C92BB2C214F895FA052B5",
+    "HIdB": "",
+    "RolbOptOut": "NO",
+    "MultiBusinessFlag": "NO",
+    "HintValue": null,
+    "ChannelCode": "",
+    "CorelationID": "bcdhfjjf"
+};
+ 
+//Sas Dynamic Object
+_sasDynObj = {
+    "Positions": ["aemDiv"],
+    "CustomerSeg": "Per",
+    "KruxSegs": "fds54nf,ljk44fn",
+    "KruxKuid": "Lq5GvyEf"
+};
+              </script>            
+    <title>Hello, world!</title>
+  </head>
+  <body>
+   <div class="container-fluid"> 
+    <div class="jumbotron">
+              <div class="row">
+              <div class="col-xl-12 form-section">
+                             <h1>SAS Impressions</h1>
+                                           <form>
+                                             <div class="form-group">
+                                                          <label for="exampleInputEmail1">Enter Hash ID</label>
+                                                          <input type="email" class="form-control" id="hashid" aria-describedby="emailHelp" placeholder="Enter Hash ID">
+                                             </div> 
+                                             <div class="form-group">
+                                                          <label for="exampleFormControlSelect1">No of Impression calls</label>
+                                                   <select class="form-control" id="impressions">
+                                                                        <option selected>3</option>
+                                                                        <option>6</option>
+                                                                        <option>9</option>
+                                                                        <option>12</option>
+                                                                        <option>15</option>
+                                                          </select>
+                                             </div>                                             
+                                             <a href="javascript:void(0);" onclick="createImpression();" class="btn btn-primary">Submit</a>
+                                           </form>
+                </div>
+                            
+          </div>
+     </div>
+   </div>
+    <!-- Optional JavaScript -->
+   
+              <script>
+ 
+ 
+var _c3, _c4, _sasObj, sasConObj, sasDynObj, sasServiceCall, sasSetsvServiceCall, urlStringArray, sasResponse, catObj, _impressionsCount;
+_sasObj = {
+  "_sasdevurl":"https://bclaysdev-ads.aimatch.com/bclays/", //Devlopment use only
+  "_sasprodurl":"https://bclays-ads.aimatch.com/bclays/", // Production use only
+  "_servertype":"lserver/bserverj" // server type for response  
+};
+sasConObj           = (_sasConObj !== undefined? _sasConObj : {});
+sasDynObj           = (_sasDynObj !== undefined? _sasDynObj : {});
+sasServiceCall      = "";
+sasSetsvServiceCall = "";
+urlStringArray      = [];
+sasResponse         = {};   
+ 
+//cat Cookie setup
+  //var ccp        = unescape(_satellite.readCookie("CCP"));
+  var ccp = unescape('%7B%22publicuser%22%3A%7B%22cat2%22%3A%22on%22%2C%22cat3%22%3A%22on%22%2C%22cat4%22%3A%22on%22%2C%22catStamp%22%3A%2231%2F05%2F2018+10%3A21%22%2C%22createStamp%22%3A%2231%2F05%2F2018+10%3A21%22%7D%7D');
+console.log(JSON.parse(ccp));   
+  var ccpCurrent = "undefined";//unescape(_satellite.readCookie("CCP_CURRENT"));
+      ccpCurrent = ccpCurrent == "" || ccpCurrent == "undefined" ? "publicuser" : ccpCurrent;
+  //if(ccp=="undefined" || ccpCurrent==null)    return !1;
+  //if(JSON.parse(ccp)[ccpCurrent]==null)       return !1;
+  _c3 = JSON.parse(ccp)[ccpCurrent].cat3;
+  _c4 = JSON.parse(ccp)[ccpCurrent].cat4;
+             
+  if(_c4 === "off") {var regC4 = /^KruxSegs|KruxKuid$/;for(i in _sasDynObj) if(regC4.test(i)==1){delete _sasDynObj[i];}}
+  if(_c3 === "off") {var regC3 = /^HIdP|HIdB$/;for(i in _sasConObj) if(regC3.test(i)==1){delete _sasConObj[i];}}
+ 
+(function(sasObj, sasConObj, sasDynObj,$){
+  var a = 0;
+  function sasAjaxCall(){
+    urlStringArray.map(function(serUrl){
+      var sasServiceCall = [sasObj._sasprodurl + sasObj._servertype, cacheBuster(), serUrl].join("/");
+      var b = sasConObj.Positions;
+      console.log(sasServiceCall);
+      $.ajax({
+        type     : "GET",
+        url      : sasServiceCall,
+        dataType : "json",
+        success  : function(result,status,xhr){
+          sasResponse[b.constructor===Array ? b[a++] : b] = result[0];         
+        },
+        error:function(xhr, status, error){
+          console.log(error);
+        }
+      });
+    });
+  };
+  createUrlString = function(){
+    var conDynObjs, b, c, i, urlString, urlArray;
+    conDynObjs = {};
+    for(b in sasConObj) conDynObjs[b] = sasConObj[b];
+    for(b in sasDynObj) conDynObjs[b] = sasDynObj[b];
+    urlArray  = "";
+    urlString = "";
+    if(urlStringArray.length!==0) urlStringArray = [];
+    if((_c3!=='off') && (_c4!=='off'))urlString = "HashID=" + selAccount(sasDynObj["SelectedTab"]);
+    for(item in conDynObjs) if(/^Positions|SelectedTab|HIdP|HIdB$/.test(item)!=1){
+      urlString += [item, "=", conDynObjs[item],"/"].join("");
+    };
+    console.log(urlString);             
+    c = sasDynObj.Positions;
+    c = c.constructor===Array ? c : [c];
+    i = 0;
+    c.map(function(item){
+      urlArray = ["b", ++i, "/Position=", item, "/", urlString].join("");
+      urlStringArray.push(urlArray);
+    });
+    console.log(urlStringArray, _impressionsCount);
+    for(var i=0,j=_impressionsCount;i<j;i++){sasAjaxCall();}   
+  };
+  function selAccount(_account){
+    var b, c;
+    b = sasConObj;
+    c = b[_account=="Bus" ? !b["MultiBusinessFlag"] ? "HIdB" : undefined : "HIdP"];
+    if(c) return c + "/";
+  };
+  function cacheBuster(){
+    var _aimRnd = Math.round(Math.random() * 1e8);
+    return ["ball/random=", "/viewid=", ""].join(_aimRnd);
+  };
+             
+  function createImpression(){
+              var formElements, _hashId;
+              _hashId = $("#hashid").val();
+              _impressionsCount = parseInt($("#impressions :selected").text());
+              console.log(_impressionsCount);
+              if((_hashId != "") && (_hashId != null) ){
+                             _sasConObj['HIdP'] = _hashId;
+                             createUrlString();           
+              }else{
+                             alert("Please enter Hash ID");
+              }
+             
+              //createUrlString();
+  }
+ 
+ 
+  window.createImpression = createImpression;             
+})(_sasObj,sasConObj,sasDynObj,$);
+ 
+ 
+/*$(document).ready(function(){
+  var a, b, c, d;
+  a = sasResponse;
+  console.log(a);
+  b = _sasDynObj
+  var c = b.Positions;
+  c = c.constructor===Array ? c : [c];
+  c.map(function(item){
+    $("#" + item).html(a[item]);
+  });
+             
+});*/
+              </script>
+  </body>
+</html>
