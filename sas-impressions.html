@@ -102,7 +102,7 @@ console.log(JSON.parse(ccp));
   function sasAjaxCall(){
     urlStringArray.map(function(serUrl){
       var sasServiceCall = [sasObj._sasprodurl + sasObj._servertype, cacheBuster(), serUrl].join("/");
-      var b = sasConObj.Positions;
+      var b = sasDynObj.Positions;
       console.log(sasServiceCall);
       $.ajax({
         type     : "GET",
